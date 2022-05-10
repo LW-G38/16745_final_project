@@ -1,0 +1,219 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>legappend</title><meta name="generator" content="MATLAB 8.0"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2014-07-14"><meta name="DC.source" content="legappend_demo.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, tt, code { font-size:12px; }
+pre { margin:0px 0px 20px; }
+pre.error { color:red; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1><tt>legappend</tt></h1><!--introduction--><p>The <tt>legappend</tt> function adds new entries to a legend. This is good for making PowerPoint slides, when you may want to start by plotting a few data sets, then add data to your plot one entry at a time. This function eliminates the need to copy and paste the complete legend creation code each time you add a curve to a plot, and alleviates the minor headaches you'd experience if you decided to rearrange the order in which items are plotted.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Syntax</a></li><li><a href="#2">Description</a></li><li><a href="#3">Examples</a></li><li><a href="#4">Add one entry</a></li><li><a href="#5">Add two entries</a></li><li><a href="#6">Delete a line</a></li><li><a href="#7">Delete three lines</a></li><li><a href="#8">Usage note</a></li><li><a href="#9">Author Info</a></li></ul></div><h2>Syntax<a name="1"></a></h2><pre>legappend('new legend entry')
+legappend('new entry 1','new entry 2',...,'new entry N')
+legappend('')
+legappend('','',...,'')
+[legend_h,object_h,plot_h,text_strings] = legappend(...)</pre><h2>Description<a name="2"></a></h2><p><tt>legappend('new legend entry')</tt> appends an existing legend with <i>new legend entry</i>.</p><p><tt>legappend('new entry 1','new entry 2',...,'new entry N')</tt> adds several new entries to the legend.</p><p><tt>legappend('')</tt> deletes the last entry from the legend.</p><p><tt>legappend('','',...,'')</tt> deletes the last several entries from the legend.</p><p><tt>[legend_h,object_h,plot_h,text_strings] = legappend(...)</tt> returns <tt>legend_h</tt>, the handle of the new legend; <tt>object_h</tt>, handles of the line, patch, and text graphics objects used in the legend; <tt>plot_h</tt>, handles of the lines and other objects used in the plot; and <tt>text_strings</tt>, a cell array of the text strings used in the legend. Note that for new legend entries, <tt>legappend</tt> does not add entries to a current legend, but deletes the current legend and recreates a new one. As a result, the legend handle will change with each new-entry use of <tt>legappend</tt>.  The legend handle does not change when <tt>legappend</tt> is used to delete an entry.</p><h2>Examples<a name="3"></a></h2><p>Say you have some data, and a number of old models exist to try and explain the data.</p><pre class="codeinput"><span class="comment">% Some data and old models:</span>
+x = (1:10)';
+y = [x-5+x.^1.05 x-2 x-3 x-4 x-5];
+
+<span class="comment">% Plot the data and old models:</span>
+figure
+plot(x,y(:,1),<span class="string">'mo'</span>,<span class="string">'markersize'</span>,10);
+hold <span class="string">on</span>;
+plot(x,y(:,2),<span class="string">'r'</span>);
+plot(x,y(:,3),<span class="string">'b'</span>);
+plot(x,y(:,4),<span class="string">'k'</span>);
+plot(x,y(:,5),<span class="string">'kp'</span>);
+box <span class="string">off</span>
+axis([1 10 -5 20])
+
+legend(<span class="string">'data'</span>,<span class="string">'model 1'</span>,<span class="string">'model 2'</span>,<span class="string">'model 3'</span>,<span class="string">'model 4'</span>,<span class="string">'location'</span>,<span class="string">'northwest'</span>)
+legend <span class="string">boxoff</span>
+</pre><img vspace="5" hspace="5" src="legappend_demo_01.png" alt=""> <h2>Add one entry<a name="4"></a></h2><p>Now you've come up with your own model and you want to add it to the plot you've already created. Without <tt>legappend</tt>, you'd have to recreate the legend by <tt>legend('data','model 1','model 2','model 3','model 4','my new amazing model','location','northwest'); legend boxoff</tt>.  That's not so awful if you only have to do it once, but our example here is simple.  If you're telling a more complex story with a slowly-building plot, adding one entry at a time, the bookkeeping can become a bit unwieldy. This is especially true when tinkering with the order in which you want to add different curves to your plot.</p><p>Back to our simple example: We've plotted some observational data along with a few old models that attempt to describe the data.  But you've come up with your own model and you want to show the scientific community how amazing your model is. When you're giving a talk to the bigwigs at the conference this is the point in your lecture when you'd say, "Look at how poorly the old models models fit the data--wouldn't it be great if we had a better model?"  And now for the dramatic unveil:</p><pre class="codeinput">myNewModel = x - 5.5 + x.^1.1;
+plot(x,myNewModel,<span class="string">'m'</span>,<span class="string">'linewidth'</span>,2);
+
+legappend(<span class="string">'my new amazing model!'</span>)
+</pre><img vspace="5" hspace="5" src="legappend_demo_02.png" alt=""> <h2>Add two entries<a name="5"></a></h2><p>Now suppose you want to add two entries at a time. Here's how:</p><pre class="codeinput">plot(x,myNewModel+3,<span class="string">'r:'</span>)
+plot(x,myNewModel-3,<span class="string">'b--'</span>)
+
+legappend(<span class="string">'my model plus 3'</span>,<span class="string">'my model minus 3'</span>)
+</pre><img vspace="5" hspace="5" src="legappend_demo_03.png" alt=""> <h2>Delete a line<a name="6"></a></h2><p>Now for some reason you'd like to remove the last entry from a legend. This will not delete the plotted data, but it will delete the last entry from the legend.</p><pre class="codeinput">legappend(<span class="string">''</span>)
+</pre><img vspace="5" hspace="5" src="legappend_demo_04.png" alt=""> <h2>Delete three lines<a name="7"></a></h2><p>You can delete several entries from legend at once like this:</p><pre class="codeinput">legappend(<span class="string">''</span>,<span class="string">''</span>,<span class="string">''</span>)
+</pre><img vspace="5" hspace="5" src="legappend_demo_05.png" alt=""> <h2>Usage note<a name="8"></a></h2><p>Although this function claims to "append" new entries to an existing legend, in truth it deletes the existing legend and attempts to recreate a very similar legend with the new entries in it.  This may mean that it won't get all of your settings right, and it also means you'll have a new legend handle each time you use the <tt>legappend</tt> function to add new legend entries.</p><h2>Author Info<a name="9"></a></h2><p>This function was created by Chad A. Greene of the Institute for Geophysics, The University of Texas at Austin, July 2014.</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2012b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% |legappend|
+% The |legappend| function adds new entries to a legend. This is good for
+% making PowerPoint slides, when you may want to start by plotting a few
+% data sets, then add data to your plot one entry at a time. This function 
+% eliminates the need to copy and paste the complete legend creation code each time
+% you add a curve to a plot, and alleviates the minor headaches you'd experience 
+% if you decided to rearrange the order in which items are plotted.
+
+%% Syntax
+% 
+%  legappend('new legend entry') 
+%  legappend('new entry 1','new entry 2',...,'new entry N') 
+%  legappend('') 
+%  legappend('','',...,'')
+%  [legend_h,object_h,plot_h,text_strings] = legappend(...)
+
+%% Description 
+% 
+% |legappend('new legend entry')| appends an existing legend with _new
+% legend entry_.
+% 
+% |legappend('new entry 1','new entry 2',...,'new entry N')| adds several
+% new entries to the legend. 
+% 
+% |legappend('')| deletes the last entry from the legend. 
+% 
+% |legappend('','',...,'')| deletes the last several entries from the
+% legend.
+% 
+% |[legend_h,object_h,plot_h,text_strings] = legappend(...)| returns |legend_h|, the
+% handle of the new legend; |object_h|, handles of the line, patch, and
+% text graphics objects used in the legend; |plot_h|, handles of the lines
+% and other objects used in the plot; and |text_strings|, a cell array of
+% the text strings used in the legend. Note that for new legend entries,
+% |legappend| does not add entries to a current legend, but deletes the
+% current legend and recreates a new one. As a result, the legend handle
+% will change with each new-entry use of |legappend|.  The legend handle
+% does not change when |legappend| is used to delete an entry. 
+% 
+
+%% Examples
+% Say you have some data, and a number of old models exist to try and
+% explain the data.  
+
+% Some data and old models: 
+x = (1:10)'; 
+y = [x-5+x.^1.05 x-2 x-3 x-4 x-5]; 
+
+% Plot the data and old models:
+figure
+plot(x,y(:,1),'mo','markersize',10); 
+hold on; 
+plot(x,y(:,2),'r'); 
+plot(x,y(:,3),'b'); 
+plot(x,y(:,4),'k'); 
+plot(x,y(:,5),'kp'); 
+box off
+axis([1 10 -5 20])
+
+legend('data','model 1','model 2','model 3','model 4','location','northwest') 
+legend boxoff
+
+%% Add one entry
+% Now you've come up with your own model and you want to add it to the plot
+% you've already created. Without |legappend|, you'd have to recreate the
+% legend by |legend('data','model 1','model 2','model 3','model 4','my new
+% amazing model','location','northwest'); legend boxoff|.  That's not so
+% awful if you only have to do it once, but our example here is simple.  If
+% you're telling a more complex story with a slowly-building plot, adding one
+% entry at a time, the bookkeeping can become a bit unwieldy. This is
+% especially true when tinkering with the order in which you want to
+% add different curves to your plot. 
+% 
+% Back to our simple example: We've plotted some observational data along with a few old
+% models that attempt to describe the data.  But you've come up with your
+% own model and you want to show the scientific community how amazing your model is. 
+% When you're giving a talk to the bigwigs at the conference this is the point in 
+% your lecture when you'd say, "Look at how poorly the
+% old models models fit the dataREPLACE_WITH_DASH_DASHwouldn't it be great if we had a better
+% model?"  And now for the dramatic unveil: 
+
+myNewModel = x - 5.5 + x.^1.1; 
+plot(x,myNewModel,'m','linewidth',2); 
+
+legappend('my new amazing model!')
+
+%% Add two entries
+% Now suppose you want to add two entries at a time. Here's how: 
+
+plot(x,myNewModel+3,'r:')
+plot(x,myNewModel-3,'bREPLACE_WITH_DASH_DASH')
+
+legappend('my model plus 3','my model minus 3')
+
+%% Delete a line 
+% Now for some reason you'd like to remove the last entry from a legend.
+% This will not delete the plotted data, but it will delete the last entry
+% from the legend.
+
+legappend('')
+
+%% Delete three lines 
+% You can delete several entries from legend at once like this: 
+
+legappend('','','')
+
+%% Usage note
+% Although this function claims to "append" new entries to an existing
+% legend, in truth it deletes the existing legend and attempts to recreate a
+% very similar legend with the new entries in it.  This may mean that it
+% won't get all of your settings right, and it also means you'll have a new
+% legend handle each time you use the |legappend| function to add new legend entries. 
+
+%% Author Info
+% This function was created by Chad A. Greene of the Institute for Geophysics, 
+% The University of Texas at Austin, July 2014.  
+
+##### SOURCE END #####
+--></body></html>
