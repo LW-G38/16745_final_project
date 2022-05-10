@@ -8,12 +8,13 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
 \title{ANN-MPC and ILC on Building HVAC Control Systems
-\thanks{Submitted as part of CMU 16745 course requirement.}
+\thanks{Submitted as part of CMU 16745 course requirements. Github link of this project: \url{https://github.com/LW-G38/16745_final_project}}
 }
 
 \author{\IEEEauthorblockN{Wei Liang}
@@ -76,12 +77,6 @@ In recent years, researchers have started to explore other optimal control optio
 Early implementations of ILC methods for building HVAC systems include reduction of tracking errors during the transient portion of static pressure tracking of water pumps and supply fans \cite{yan2010iterative}. Minakais, Mishra, and Wen apply ILC strategy to building temperature regulation in a simulation environment \cite{minakais2014groundhog} and find that the energy consumption of the building HVAC system increased as the temperature set-points are more tightly followed. A series of work \cite{peng2016iterative,peng2016optimization,peng2017constrained,peng2017distributed,peng2018concurrent,peng2019optimization}, by Peng and members in Mechanical Systems Control Lab in University of California, Berkeley, proposes a cooperative and distributed ILC design for a four-zone AHU-VAV reheat system considered control input constraints and global energy consumption optimization. Lu, Ai, and Li propose an active disturbance rejection based ILC strategy for a VAV sysetm built in a building energy simulation platform \cite{lu2018active}. However, most of the current research on ILC application on building HVAC systems are conducted in either simulation or test-beds. Real-world and larger-scale implementations are rarely found. In this work, we implement the proposed ILC design on models built by real-world data and conduct the numerical simulation on a large-scale thrity-two-zone AHU-VAV reheat system.
 
 In this work, we propose a bi-level control strategy for building HVAC systems: at the top level, the control optimization of AHU is done by a ANN-MPC algorithm that uses an Artificial Neural Network to train on MPC-Simulated Control data. The final network/controller is able to directly interact with the system and imitate the performance of conventional MPC in some extent. At the bottom level, the temperature control of VAV boxes is achieved by an ILC controller design to ensure a tight room air temperature regulation to its set-point without significant increase of the energy consumption.
-
-All the data processing, modeling, model validation, and development and implementation of the control algorithms in this paper are based on the extensive data collections from an office building on the campus of the University of California, Merced (UC Merced).
-
-
-
-
 
 
 \section{ANN-MPC Problem Formulation}
@@ -260,7 +255,7 @@ where $\Delta\mathbf{T} = \mathbf{T} - \mathbf{T}_{\textsuperscript{sp}}$, $\til
 Note that we also compute $\Delta\mathbf{w} = \mathbf{w}_\textsuperscript{fc} - \mathbf{w}$, which is the difference between the forecast temperature data and the real-time outside air data.
 
 \section{Numerical Results}
-In this section, we demonstrate the model identification and control simulation with extensive measurements from an office building on UC Merced campus. Extensive historical data from measurements of the HVAC system in the Science and Engineering building I of UC Merced were collected, cleansed, and pre-processed by one of the author's previous thesis work \cite{liang2014modeling}. The HVAC control system in the building obeys the communication protocol for building automation and control networks (BACnet) by ASHRAE, ANSI and ISO standard \cite{bushby1997bacnettm}. The online data storage and direct digital control (DDC) are accessible by a BAS interface, WebCTRL$\textsuperscript{\textregistered}$ \cite{webctrl2022alc} by Automated Logic company.
+In this section, we demonstrate the model identification and control simulation with extensive measurements from an office building on the campus of the University of California, Merced (UC Merced). Historical data between May 1st to May 31st, 2014 were collected, cleansed, and pre-processed by one of the author's previous thesis work \cite{liang2014modeling}. The HVAC control system in the building obeys the communication protocol for building automation and control networks (BACnet) by ASHRAE, ANSI and ISO standard \cite{bushby1997bacnettm}. The online data storage and direct digital control (DDC) are accessible by a BAS interface, WebCTRL$\textsuperscript{\textregistered}$ \cite{webctrl2022alc}.
 
 To validate the models in this work, we first select a series of metrics for evaluating the accuracy of validation. In literature regarding data analysis of time series in building science and technology area \cite{FraustoPietersDeltour03,Anderson94,Brillinger01,NorgaardRavnPoulsenHansen00,Norlen90}, it is common to use $\mathrm{MAE}$, $\mathrm{MSE}$, $\mathrm{RMSE}$, coefficient of determination ($r^{2}$) and maximum absolute error ($\mathrm{MaxAE}$). 
 These are defined as
@@ -372,7 +367,7 @@ Fig. \ref{figModel} presents a one-day room air temperature validation of the fo
 \label{figModel}
 \end{figure}
 
-Table \ref{tabModelDis} shows the comparison of the average validation errors between the forecast model and real-time model of the 32 zones. It is expected that the coefficient of determination $r^2$ does not vary substantially because even though the forecast outside air data are not accurate, it still exhibits a similar pattern to the real-time outside air data that indicates a strong correlation to the room air temperature data. However, it can be seen that the $\mathrm{MAE}$ and $\mathrm{MSE}$ are significantly increased from the real-time model to the forecast model. It implies that the tracking error of the forecast model is remarkably larger than that of the real-time model.
+Table \ref{tabModelDis} shows the comparison of the average validation errors between the forecast model and real-time model of the thirty-two zones. It is expected that the coefficient of determination $r^2$ does not vary substantially because even though the forecast outside air data are not accurate, it still exhibits a similar pattern to the real-time outside air data that indicates a strong correlation to the room air temperature data. However, it can be seen that the $\mathrm{MAE}$ and $\mathrm{MSE}$ are significantly increased from the real-time model to the forecast model. It implies that the tracking error of the forecast model is remarkably larger than that of the real-time model.
 
 \begin{table}[htbp]
 \caption{The metrics of room temperature model validation between forecast model and real-time model.}
@@ -426,7 +421,7 @@ Fig. \ref{figILC1C} shows the control signals of Room 1 from Day 1 to Day 8. It 
 \section{Conclusions}
 We proposed a deep learning based MPC controller to produce optimal control for AHU that utilize the outputs from conventional MPC controller within system simulation with disturbances. The result indicates that the deep learning based controller is able to show an acceptable tracking performance in limited simulations.
 
-We also propose a QP-based ILC controller with room air temperature set-points reference, and HVAC control saturation constraints. A 32-zone VAV system achieves tight tracking performance to its set-points without a significant increase of the energy consumption. 
+We also propose a QP-based ILC controller with room air temperature set-points reference, and HVAC control saturation constraints. A thirty-two-zone VAV system achieves tight tracking performance to its set-points without a significant increase of the energy consumption. 
 
 For future work, we would like to develop a top-down hierarchical controller by linking the bi-level control design together. Additionally, more disturbances to building HVAC systems, such as occupancy behaviors and partial failure of the systems will be studied to establish the effectiveness of the proposed ILC design. With respect to the ANN-MPC, future endeavors could be done on either training the dataset to a lower metric or on a different architecture (e.g. Long short-term memory, LSTM). However, if other architectures are implemented, it is essential to consider the possibility and performance of its online control.
 \section*{Acknowledgment}
