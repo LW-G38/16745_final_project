@@ -1,0 +1,2391 @@
+
+IEEEexample.bib 
+V1.12 (2007/01/11)
+Copyright (c) 2002-2007 by Michael Shell
+See: http://www.michaelshell.org/
+for current contact information.
+
+This is an example BibTeX database for the official IEEEtran.bst
+BibTeX style file.
+
+Some entries call strings that are defined in the IEEEabrv.bib file.
+Therefore, IEEEabrv.bib should be loaded prior to this file. 
+Usage: 
+
+\bibliographystyle{./IEEEtran}
+\bibliography{./IEEEabrv,./IEEEexample}
+
+
+Support sites:
+http://www.michaelshell.org/tex/ieeetran/
+http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+and/or
+http://www.ieee.org/
+
+*************************************************************************
+Legal Notice:
+This code is offered as-is without any warranty either expressed or
+implied; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE! 
+User assumes all risk.
+In no event shall IEEE or any contributor to this code be liable for
+any damages or losses, including, but not limited to, incidental,
+consequential, or any other damages, resulting from the use or misuse
+of any information contained here.
+
+All comments are the opinions of their respective authors and are not
+necessarily endorsed by the IEEE.
+
+This work is distributed under the LaTeX Project Public License (LPPL)
+( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+distributed and modified. A copy of the LPPL, version 1.3, is included
+in the base LaTeX documentation of all distributions of LaTeX released
+2003/12/01 or later.
+Retain all contribution notices and credits.
+** Modified files should be clearly indicated as such, including  **
+** renaming them and changing author support contact information. **
+
+File list of work: IEEEabrv.bib, IEEEfull.bib, IEEEexample.bib,
+                   IEEEtran.bst, IEEEtranS.bst, IEEEtranSA.bst,
+                   IEEEtranN.bst, IEEEtranSN.bst, IEEEtran_bst_HOWTO.pdf
+*************************************************************************
+
+
+Note that, because the example references were taken from actual IEEE
+publications, these examples do not always contain the full amount
+of information that may be desirable (for use with other BibTeX styles).
+In particular, full names (not abbreviated with initials) should be
+entered whenever possible as some (non-IEEE) bibliography styles use
+full names. IEEEtran.bst will automatically abbreviate when it encounters
+full names.
+ 
+ 
+ 
+ 
+references for the IEEEtran.bst documentation
+IEEEtran homepage
+@electronic{IEEEhowto:IEEEtranpage,
+  author        = "Michael Shell",
+  title         = "{IEEE}tran Homepage",
+  url           = "http://www.michaelshell.org/tex/ieeetran/",
+  year          = "2007"
+}
+
+
+the distribution site for IEEEtran.bst
+@electronic{IEEEexample:shellCTANpage,
+  author        = "Michael Shell",
+  title         = "{IEEE}tran Webpage on {CTAN}",
+  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/",
+  year          = "2007"
+}
+
+
+the IEEE website
+sort key is needed for sorting styles
+@electronic{IEEEexample:IEEEwebsite,
+  title         = "The {IEEE} Website",
+  url           = "http://www.ieee.org/",
+  year          = "2007",
+  key           = "IEEE"
+}
+
+
+The BibTeX user's guide.
+The filename could have been put in the URL instead. But, there might
+be other interesting things for the user in the same directory - and
+the filename might change before the directory that contains it.
+@electronic{IEEEexample:bibtexuser,
+  author        = "Oren Patashnik",
+  title         = "{{\BibTeX}}ing",
+  howpublished  = "{btxdoc.pdf}",
+  url           = "http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/",
+  month         = feb,
+  year          = "1988"
+}
+
+
+The BibTeX style designer's guide.
+@electronic{IEEEexample:bibtexdesign,
+  author        = "Oren Patashnik",
+  title         = "Designing {{\BibTeX}} Styles",
+  howpublished  = "{btxhak.pdf}",
+  url           = "http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/",
+  month         = feb,
+  year          = "1988"
+}
+
+
+A comprehensive BibTeX tutorial.
+@electronic{IEEEexample:tamethebeast,
+  author        = "Nicolas Markey",
+  title         = "Tame the BeaST  ---  The B to X of {{\BibTeX}}",
+  url           = "http://tug.ctan.org/tex-archive/info/bibtex/tamethebeast/",
+  month         = oct,
+  year          = "2005"
+}
+
+
+The BibTeX Tips and FAQ guide.
+@electronic{IEEEexample:bibtexFAQ,
+  author        = "David Hoadley and Michael Shell",
+  title         = "{{\BibTeX}} Tips and {FAQ}",
+  howpublished  = "{btxFAQ.pdf}",
+  url           = "http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/",
+  month         = jan,
+  year          = "2007"
+}
+
+
+The TeX FAQ
+@electronic{IEEEexample:texfaq,
+  author        = "Robin Fairbairns",
+  title         = "The {{\TeX}} {FAQ}",
+  url           = "http://www.tex.ac.uk/cgi-bin/texfaq2html/",
+  month         = jan,
+  year          = "2007"
+}
+
+
+A BibTeX Guide via Examples.
+@electronic{IEEEexample:bibtexguide,
+  author        = "Ki-Joo Kim",
+  title         = "A {{\BibTeX}} Guide via Examples",
+  howpublished  = "{bibtex\_guide.pdf}",
+  url           = "http://www.geocities.com/kijoo2000/",
+  month         = apr,
+  year          = "2004"
+}
+
+
+TeX User Group Bibliography Archive
+@electronic{IEEEexample:beebe_archive,
+  author        = "Nelson H. F. Beebe",
+  title         = "{{\TeX}} User Group Bibliography Archive",
+  url           = "http://www.math.utah.edu:8080/pub/tex/bib/index-table.html",
+  month         = aug,
+  year          = "2006"
+}
+
+The natbib.sty package.
+@electronic{ctan:natbib,
+  author        = "Patrick W. Daly",
+  title         = "The natbib.sty package",
+  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/natbib/",
+  month         = sep,
+  year          = "2006"
+}
+
+The url.sty package.
+@electronic{IEEEexample:urlsty,
+  author        = "Donald Arseneau",
+  title         = "The url.sty Package",
+  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/misc/",
+  month         = jun,
+  year          = "2005",
+}
+
+
+The hyperref.sty package.
+@electronic{IEEEexample:hyperrefsty,
+  author        = "Sebastian Rahtz and Heiko Oberdiek",
+  title         = "The hyperref.sty Package",
+  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/hyperref/",
+  month         = nov,
+  year          = "2006",
+}
+
+
+The breakurl.sty package.
+@electronic{IEEEexample:breakurl,
+  author        = "Vilar Camara Neto",
+  title         = "The breakurl.sty Package",
+  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/breakurl/",
+  month         = aug,
+  year          = "2006",
+}
+
+
+The Babel package.
+@electronic{IEEEexample:babel,
+  author        = "Johannes Braams",
+  title         = "The Babel Package",
+  url           = "http://www.ctan.org/tex-archive/macros/latex/required/babel/",
+  month         = nov,
+  year          = "2005",
+}
+
+
+The multibib package.
+@electronic{IEEEexample:multibibsty,
+  author        = "Thorsten Hansen",
+  title         = "The multibib.sty package",
+  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/multibib/",
+  month         = jan,
+  year          = "2004"
+}
+
+
+The biblatex package.
+@electronic{IEEEexample:biblatex,
+  author        = "Philipp Lehman",
+  title         = "The biblatex package",
+  url           = "http://www.ctan.org/tex-archive/macros/latex/exptl/biblatex/",
+  month         = jan,
+  year          = "2007"
+}
+
+
+
+The three most common and typical types of references used in
+IEEE publications:
+
+an article in a journal
+Note the use of the IEEE_J_EDL string, defined in the IEEEabrv.bib file,
+for the journal name. IEEEtran.bst defines the BibTeX standard three
+letter month codes per IEEE style.
+From the June 2002 issue of "IEEE Transactions on Electron Devices",
+page 996, reference #16.
+@article{IEEEexample:article_typical,
+  author        = "S. Zhang and C. Zhu and J. K. O. Sin and P. K. T. Mok",
+  title         = "A Novel Ultrathin Elevated Channel Low-temperature 
+                   Poly-{Si} {TFT}",
+  journal       = IEEE_J_EDL,
+  volume        = "20",
+  month         = nov,
+  year          = "1999",
+  pages         = "569-571"
+}
+
+
+journal article using et al.
+The (five) authors are actually: F. Delorme, S. Slempkes, G. Alibert, 
+B. Rose, J. Brandon
+The month (July) was not given here.
+From the September 1998 issue of "IEEE Journal on Selected Areas in
+Communications", page 1257, reference #28.
+@article{IEEEexample:articleetal,
+  author        = "F. Delorme and others",
+  title         = "Butt-jointed {DBR} Laser With 15 {nm} Tunability Grown
+                   in Three {MOVPE} Steps",
+  journal       = "Electron. Lett.",
+  volume        = "31",
+  number        = "15",
+  year          = "1995",
+  pages         = "1244-1245"
+}
+
+
+a paper in a conference proceedings
+"conference" can be used as an alias for "inproceedings"
+From the June 2002 issue of "Journal of Microelectromechanical Systems",
+page 205, reference #16.
+@inproceedings{IEEEexample:conf_typical,
+  author        = "R. K. Gupta and S. D. Senturia",
+  title         = "Pull-in Time Dynamics as a Measure of Absolute Pressure",
+  booktitle     = "Proc. {IEEE} International Workshop on
+                   Microelectromechanical Systems ({MEMS}'97)",
+  address       = "Nagoya, Japan",
+  month         = jan,
+  year          = "1997",
+  pages         = "290-294"
+}
+
+
+a book
+From the May 2002 issue of "IEEE Transactions on Magnetics",
+page 1466, reference #4.
+@book{IEEEexample:book_typical,
+  author        = "B. D. Cullity",
+  title         = "Introduction to Magnetic Materials",
+  publisher     = "Addison-Wesley",
+  address       = "Reading, MA",
+  year          = "1972"
+}
+
+
+
+
+Other examples
+
+journal article with large page numbers, IEEE will divide numbers 5 digits
+or longer into groups of three with small spaces between them. Page ranges
+can be separated via either "-" or "--", IEEEtran.bst will automatically
+convert the separator dash(es) to "--".
+Authors and/or IEEE do not always provide/use the journal number, but it
+was used in this case. IEEEtran.bst can be configured to ignore journal
+numbers if desired.
+From the August 2000 issue of "IEEE Photonics Technology Letters",
+page 1039, reference #11.
+@article{IEEEexample:articlelargepages,
+  author        = "A. Castaldini and A. Cavallini and B. Fraboni
+                   and P. Fernandez and J. Piqueras",
+  title         = "Midgap Traps Related to Compensation Processes in
+                   {CdTe} Alloys",
+  journal       = "Phys. Rev. B.",
+  volume        = "56",
+  number        = "23",
+  year          = "1997",
+  pages         = "14897-14900"
+}
+
+
+journal article with dual months 
+use the BibTeX "#" concatenation operator
+From the March 2002 issue of "IEEE Transactions on Mechatronics",
+page 21, reference #8.
+@article{IEEEexample:articledualmonths,
+  author        = "Y. Okada and K. Dejima and T. Ohishi",
+  title         = "Analysis and Comparison of {PM} Synchronous Motor and
+                   Induction Motor Type Magnetic Bearings",
+  journal       = IEEE_J_IA,
+  volume        = "31",
+  month         = sep # "/" # oct,
+  year          = "1995",
+  pages         = "1047-1053"
+}
+
+
+journal article to be published as a misc entry type
+date information like month and year is optional 
+However, the article form like that below may be a better approach.
+From the May 2002 issue of "IEEE Journal of Selected Areas in 
+Communication", page 725, reference #3.
+@misc{IEEEexample:TBPmisc,
+  author        = "M. Coates and A. Hero and R. Nowak and B. Yu",
+  title         = "Internet Tomography",
+  howpublished  = IEEE_M_SP,
+  month         = may,
+  year          = "2002",
+  note          = "to be published"
+}
+
+
+journal article to be published as an article entry type
+year is required, so if absent, use the year field to hold
+the "submitted for publication" in order to avoid a warning for
+the missing year field.
+From the June 2002 issue of "IEEE Transactions on Information Theory",
+page 1461, reference #21.
+@article{IEEEexample:TBParticle,
+  author        = "N. Kahale and R. Urbanke",
+  title         = "On the Minimum Distance of Parallel and Serially
+                   Concatenated Codes",
+  journal       = IEEE_J_IT,
+  year          = "submitted for publication"
+}
+
+
+
+
+
+book with editor and no author
+From the June 2002 issue of "IEEE Transactions on Information Theory",
+page 1725, reference #1.
+@book{IEEEexample:bookwitheditor,
+  editor        = "J. C. Candy and G. C. Temes",
+  title         = "Oversampling Delta-Sigma Data Converters Theory,
+                   Design and Simulation",
+  publisher     = "{IEEE} Press.",
+  address       = "New York",
+  year          = "1992"
+}
+
+
+book with edition, author and editor
+Note that the standard BibTeX styles do not support book entries with both
+author and editor fields, but IEEEtran.bst does.
+The standard BibTeX way of specifying the edition is to use capitalized
+ordinal words such as "First", "Second", etc. Most .bst files can convert
+up to about "Fifth" into the format needed. IEEEtran.bst can convert up
+to "Tenth" to the "Arabic ordinal" form IEEE uses (e.g., "10th"). For
+editions over the tenth, it is best to use the "Arabic ordinal" form for
+IEEE related work (e.g., "101st")
+Note how "Jr." has to be entered.
+From the May 2002 issue of "Journal of Lightwave Technology", page 856,
+reference #17.
+@book{IEEEexample:book,
+  author        = "S. M. Metev and V. P. Veiko",
+  editor        = "Osgood, Jr., R. M.",
+  title         = "Laser Assisted Microtechnology",
+  edition       = "Second",
+  publisher     = "Springer-Verlag",
+  address       = "Berlin, Germany",
+  year          = "1998"
+}
+
+
+book with series and volume
+From the January 2000 issue of "IEEE Transactions on Communications",
+page 11, reference #31.
+@book{IEEEexample:bookwithseriesvolume,
+  editor        = "J. Breckling",
+  title         = "The Analysis of Directional Time Series: Applications to
+                   Wind Speed and Direction",
+  series        = "Lecture Notes in Statistics",
+  publisher     = "Springer",
+  address       = "Berlin, Germany",
+  year          = "1989",
+  volume        = "61"
+}
+
+
+inbook with chapter number. The pages field could also have been given.
+The chapter number could be changed to something else such as a section
+number via the type field: type = "sec.".
+From the May 2002 issue of "IEEE Transactions on Circuits and Systems---I: 
+Fundamental Applications and Theory", page 638, reference #22.
+@inbook{IEEEexample:inbook,
+  author        = "H. E. Rose",
+  title         = "A Course in Number Theory",
+  publisher     = "Oxford Univ. Press",
+  address       = "New York, NY",
+  year          = "1988",
+  chapter       = "3"
+}
+
+
+inbook with pages and note. The language field is not set to Russian
+because the title is presented here in its translated, English, form.
+From the May 2002 issue of "IEEE Transactions on Magnetics", page 1533,
+reference #5.
+@inbook{IEEEexample:inbookpagesnote,
+  author        = "B. K. Bul",
+  title         = "Theory Principles and Design of Magnetic Circuits",
+  publisher     = "Energia Press",
+  address       = "Moscow",
+  year          = "1964",
+  pages         = "464",
+  note          = "(in Russian)"
+}
+
+
+
+
+
+incollection with author and editor
+From the May 2002 issue of "Journal of Lightwave Technology",
+page 807, reference #7.
+@incollection{IEEEexample:incollection,
+  author        = "W. V. Sorin",
+  editor        = "D. Derickson",
+  title         = "Optical Reflectometry for Component Characterization",
+  booktitle     = "Fiber Optic Test and Measurement",
+  publisher     = "Prentice-Hall",
+  address       = "Englewood Cliffs, NJ",
+  year          = "1998"
+}
+
+
+incollection with series
+From the April 2000 issue of "IEEE Transactions on Communication",
+page 609, reference #3.
+@incollection{IEEEexample:incollectionwithseries,
+  author        = "J. B. Anderson and K. Tepe",
+  title         = "Properties of the Tailbiting {BCJR} Decoder",
+  booktitle     = "Codes, Systems and Graphical Models",
+  series        = "{IMA} Volumes in Mathematics and Its Applications",
+  publisher     = "Springer-Verlag",
+  address       = "New York",
+  year          = "2000"
+  
+}
+
+
+incollection with author, editor, chapter and pages
+From the January 2000 issue of "IEEE Transactions on Communications",
+page 16, reference #9.
+@incollection{IEEEexample:incollection_chpp,
+  author        = "P. Hedelin and P. Knagenhjelm and M. Skoglund",
+  editor        = "W. B. Kleijn and K. K. Paliwal",
+  title         = "Theory for Transmission of Vector Quantization Data",
+  booktitle     = "Speech Coding and Synthesis",
+  publisher     = "Elsevier Science",
+  address       = "Amsterdam, The Netherlands",
+  year          = "1995",
+  chapter       = "10",
+  pages         = "347-396"
+}
+
+
+incollection with a large number of authors, some authors/journals will
+use et al. for so many names. IEEEtran.bst can be configured to do this
+if desired, or "R. M. A. Dawson and others" can be used instead.
+Note that IEEE may not include the publisher for incollection entries -
+IEEEtran.bst will not issue a warning if the publisher is missing for
+incollections - but other .bst files often will.
+From the June 2002 issue of "IEEE Transactions on Electron Devices",
+page 996, reference #12.
+@incollection{IEEEexample:incollectionmanyauthors,
+  author        = "R. M. A. Dawson and Z. Shen and D. A. Furst and
+                   S. Connor and J. Hsu and M. G. Kane and R. G. Stewart and
+                   A. Ipri and C. N. King and P. J. Green and R. T. Flegal
+                   and S. Pearson and W. A. Barrow and E. Dickey and K. Ping
+                   and C. W. Tang and S. Van. Slyke and
+                   F. Chen and J. Shi and J. C. Sturm and M. H. Lu",
+  title         = "Design of an Improved Pixel for a Polysilicon 
+                   Active-Matrix Organic {LED} Display",
+  booktitle     = "{SID} Tech. Dig.",
+  volume        = "29",
+  year          = "1998",
+  pages         = "11-14"
+}
+
+
+
+
+
+A Motorola data book as a manual
+It is somewhat unusual to include the data book part number.
+in the title. It might be more correct to put this information
+in the howpublished field instead.
+From the December 2000 issue of "IEEE Transactions on Communications",
+page 1986, reference #10.
+@manual{IEEEexample:motmanual,
+  title         = "{FLEXChip} Signal Processor ({MC68175/D})",
+  organization  = "Motorola",
+  year          = "1996"
+}
+
+
+same reference, but using IEEEtran's howpublished extension
+@manual{IEEEexample:motmanualhowpub,
+  title         = "{FLEXChip} Signal Processor",
+  howpublished  = "{MC68175/D}",
+  organization  = "Motorola",
+  year          = "1996"
+}
+
+
+
+
+conference paper with an address and days. Some journals capitalize the
+letters in "Globecom", this one did not.
+From the May 2002 issue of "IEEE Transactions on Communications",
+page 697, reference #12.
+@inproceedings{IEEEexample:confwithadddays,
+  author        = "M. S. Yee and L. Hanzo",
+  title         = "Radial Basis Function Decision Feedback Equaliser
+                   Assisted Burst-by-burst Adaptive Modulation",
+  booktitle     = "Proc. {IEEE} Globecom '99",
+  address       = "Rio de Janeiro, Brazil",
+  month         = dec # " 5--9,",
+  year          = "1999",
+  pages         = "2183-2187"
+}
+
+
+conference paper with volume number. A conference proceedings with a vol
+number is a little uncommon, note that the vol number is placed
+before the address in the formatted bibliography entry
+From the April 2002 issue of "IEEE/ACM Transactions on Networking",
+page 181, reference #26.
+@inproceedings{IEEEexample:confwithvolume,
+  author        = "M. Yajnik and S. B. Moon and J. Kurose and D. Towsley",
+  title         = "Measurement and Modeling of the Temporal Dependence in
+                   Packet Loss",
+  booktitle     = "Proc. {IEEE} {INFOCOM}'99",
+  volume        = "1",
+  address       = "New York, NY",
+  month         = mar,
+  year          = "1999",
+  pages         = "345-352"
+}
+
+
+conference paper with a paper number, the type field can be used to
+override the word "paper", e.g., type = "postdeadline paper". A type
+can be given even without a paper  field.
+Also, IEEEtran.bst can be configured to ignore paper numbers and types.
+From the May 2002 issue of "Journal of Lightwave Technology",
+page 807, reference #4.
+@inproceedings{IEEEexample:confwithpaper,
+  author        = "M. Wegmuller and J. P. von der Weid and P. Oberson
+                   and N. Gisin",
+  title         = "High Resolution Fiber Distributed Measurements With
+                   Coherent {OFDR}",
+  booktitle     = "Proc. {ECOC}'00",
+  year          = "2000",
+  paper         = "11.3.4",
+  pages         = "109"
+}
+
+
+conference paper with a postdeadline type paper, the paper field is
+optional.
+From the August 2000 issue of "IEEE Photonics Technology Letters",
+page 1087, reference #12.
+@inproceedings{IEEEexample:confwithpapertype,
+  author        = "B. Mikkelsen and G. Raybon and R.-J. Essiambre and
+                   K. Dreyer and Y. Su. and L. E. Nelson and J. E. Johnson
+                   and G. Shtengel and A. Bond and D. G. Moodie and
+                   A. D. Ellis",
+  title         = "160 {Gbit/s} Single-channel Transmission Over 300 km 
+                   Nonzero-dispersion Fiber With Semiconductor Based
+                   Transmitter and Demultiplexer",
+  booktitle     = "Proc. {ECOC}'99",
+  year          = "1999",
+  paper         = "2-3",
+  type          = "postdeadline paper",
+  pages         = "28-29"
+}
+
+
+presented at a conference
+intype overrides the default "in" and causes the booktitle not to be
+emphasized (rendered in italics).
+From the February 2002 issue of "IEEE/ACM Transactions on Networking",
+page 163, reference #6.
+@inproceedings{IEEEexample:presentedatconf,
+  author        = "S. G. Finn and M. M{\'e}dard and R. A. Barry",
+  title         = "A Novel Approach to Automatic Protection Switching
+                   Using Trees",
+  intype        = "presented at the",
+  booktitle     = "Proc. Int. Conf. Commun.",
+  year          = "1997"
+}
+
+
+
+
+
+master's thesis, often the University name will be abbreviated and the
+state or country will be included in the address. The type field can
+used to override the default type "Master's thesis"
+From the June 2002 issue of "IEEE Transactions on Microelectromechanical
+Systems", page 186, reference #11.
+@mastersthesis{IEEEexample:masters,
+  author        = "Nin C. Loh",
+  title         = "High-Resolution Micromachined Interferometric
+                   Accelerometer",
+  school        = "Massachusetts Institute of Technology",
+  address       = "Cambridge",
+  year          = "1992"
+}
+
+
+master's thesis with a type field
+From the August 2001 issue of "IEEE/ACM Transactions on Networking",
+page 391, reference #12.
+@mastersthesis{IEEEexample:masterstype,
+  author        = "A. Karnik",
+  title         = "Performance of {TCP} Congestion Control with Rate
+                   Feedback: {TCP/ABR} and Rate Adaptive {TCP/IP}",
+  school        = "Indian Institute of Science",
+  type          = "M. Eng. thesis",
+  address       = "Bangalore, India",
+  month         = jan,
+  year          = "1999"
+}
+
+
+
+
+
+Ph.D. dissertation with a URL field, the university is abbreviated
+From the October 2001 issue of "IEEE/ACM Transactions on Networking",
+page 590, reference #11.
+@phdthesis{IEEEexample:phdurl,
+  author        = "Q. Li",
+  title         = "Delay Characterization and Performance Control of
+                   Wide-area Networks",
+  school        = "Univ. of Delaware",
+  address       = "Newark",
+  month         = may,
+  year          = "2000",
+  url           = "http://www.ece.udel.edu/~qli"
+}
+
+
+
+
+
+technical report
+From the August 2001 issue of "IEEE/ACM Transactions on Networking",
+page 490, reference #15.
+@techreport{IEEEexample:techrep,
+  author        = "R. Jain and K. K. Ramakrishnan and D. M. Chiu",
+  title         = "Congestion Avoidance in Computer Networks with a 
+                   Connectionless Network Layer",
+  institution   = "Digital Equipment Corporation",
+  address       = "MA",
+  number        = "DEC-TR-506",
+  month         = aug,
+  year          = "1987"
+}
+
+
+technical report with type
+for those times when "Tech. Rep." needs to be modified
+From the February 2001 issue of "IEEE/ACM Transactions on Networking",
+page 46, reference #8.
+@techreport{IEEEexample:techreptype,
+  author        = "J. Padhye and V. Firoiu and D. Towsley",
+  title         = "A Stochastic Model of {TCP} {R}eno Congestion Avoidance
+                   and Control",
+  institution   = "Univ. of Massachusetts",
+  address       = "Amherst, MA",
+  type          = "CMPSCI Tech. Rep.",
+  number        = "99-02",
+  year          = "1999"
+}
+
+
+technical report with type
+for those times when "Tech. Rep." needs to be modified
+This reference did not have an address.
+From the January 2000 issue of "IEEE Transactions on Communications",
+page 117, reference #6.
+@techreport{IEEEexample:techreptypeii,
+  author        = "D. Middleton and A. D. Spaulding",
+  title         = "A Tutorial Review of Elements of Weak Signal Detection
+                   in Non-{G}aussian {EMI} Environments",
+  institution   = "National Telecommunications and Information
+                   Administration ({NTIA}), U.S. Dept. of Commerce",
+  type          = "NTIA Report",
+  number        = "86-194",
+  month         = may,
+  year          = "1986"
+}
+
+
+
+
+
+an unpublished work
+for unpublished types, the note field is required. IEEE usually
+just uses the word "unpublished" for the note.
+From the August 2001 issue of "IEEE/ACM Transactions on Networking",
+page 391, reference #16.
+@unpublished{IEEEexample:unpublished,
+  author        = "T. J. Ott and N. Aggarwal",
+  title         = "{TCP} over {ATM}: {ABR} or {UBR}",
+  note          = "Unpublished"
+}
+
+
+
+
+
+electronic with a howpublished information field 
+From the August 2001 issue of "IEEE/ACM Transactions on Networking",
+page 391, reference #7.
+@electronic{IEEEexample:electronhowinfo,
+  author        = "V. Jacobson",
+  title         = "Modified {TCP} Congestion Avoidance Algorithm",
+  howpublished  = "end2end-interest mailing list",
+  url           = "ftp://ftp.isi.edu/end2end/end2end-interest-1990.mail",
+  month         = apr,
+  year          = "1990"
+}
+
+
+electronic with a howpublished information field 
+From the August 2001 issue of "IEEE/ACM Transactions on Networking",
+page 418, reference #31.
+@electronic{IEEEexample:electronhowinfo2,
+  author        = "V. Valloppillil and K. W. Ross",
+  title         = "Cache Array Routing Protocol v1.1",
+  howpublished  = "Internet draft",
+  url           = "http://ds1.internic.net/internet-drafts/draft-vinod-carp-v1-03.txt",
+  year          = "1998"
+}
+
+
+electronic with an organization and address
+From the February 2002 issue of "IEEE/ACM Transactions on Networking",
+page 114, reference #15.
+@electronic{IEEEexample:electronorgadd,
+  author        = "D. H. Lorenz and A. Orda",
+  title         = "Optimal Partition of {QoS} Requirements on Unicast
+                   Paths and Multicast Trees",
+  organization  = "Dept. Elect. Eng., Technion",
+  address       = "Haifa, Israel",
+  url           = "ftp://ftp.technion.ac.il/pub/supported/ee/Network/lor.mopq98.ps",
+  month         = jul,
+  year          = "1998"
+}
+
+
+
+
+
+U.S. patent
+Use the type field to override the patent type. e.g.,
+type = "Patent Application"
+The address is that of the assignee. Note that IEEE does not
+display the assignee, the address, and only displays one date.
+(if year is not present, the filed dates are used.) However, this
+information should be entered as other BibTeX styles may use it.
+alternatively, nationality could be entered as "U.S." 
+From the April 2000 issue of "IEEE Transactions on Communications",
+page 542, reference #6.
+@patent{IEEEexample:uspat,
+  author        = "Ronald E. Sorace and Victor S. Reinhardt and
+                   Steven A. Vaughn",
+  assignee      = "Hughes Aircraft Company",
+  address       = "Los Angeles, CA",
+  title         = "High-Speed Digital-to-{RF} Converter",
+  nationality   = "United States",
+  number        = "5668842",
+  dayfiled      = "28",
+  monthfiled    = feb,
+  yearfiled     = "1995",
+  day           = "16",
+  month         = sep,
+  year          = "1997"
+}
+
+
+Japanese Patent
+From the April 2000 issue of "IEEE Transactions on Communications",
+page 556, reference #6.
+@patent{IEEEexample:jppat,
+  author        = "U. Hideki",
+  title         = "Quadrature Modulation Circuit",
+  nationality   = "Japanese",
+  number        = "152932/92",
+  day           = "20",
+  month         = may,
+  year          = "1992"
+}
+
+
+French Patent request, the language field must be entered in lower case
+as this is the option name Babel uses. The nationality field needs to be
+capitalized. Because this is a patent request, the date filed fields are
+used while the date fields are left empty/missing. In other countries,
+the words "Patent Application", etc. are used instead.
+From the April 2000 issue of "IEEE Transactions on Communications",
+page 556, reference #9.
+@patent{IEEEexample:frenchpatreq,
+  author        = "F. Kowalik and M. Isard",
+  title         = "Estimateur d'un D{\'e}faut de Fonctionnement 
+                   d'un Modulateur en Quadrature et {\'E}tage de Modulation
+                   l'Utilisant",
+  language      = "french",
+  nationality   = "French",
+  type          = "Patent Request",
+  number        = "9500261",
+  dayfiled      = "11",
+  monthfiled    = jan,
+  yearfiled     = "1995"
+}
+
+
+
+
+
+a periodical
+From the April 2001 issue of "IEEE/ACM Transactions on Networking",
+page 160, reference #1.
+sort key is needed for sorting styles
+@periodical{IEEEexample:periodical,
+  title         = IEEE_M_PCOM # ", Special Issue on Wireless {ATM}",
+  volume        = "3",
+  month         = aug,
+  year          = "1996",
+  key           = "IEEE"
+}
+
+
+
+
+
+standard, IEEE does not use the address for standards, but it is good
+to provide one for BibTeX styles that use it.
+From the August 2001 issue of "IEEE/ACM Transactions on Networking",
+page 451, reference #2.
+@standard{IEEEexample:standard,
+  title         = "Wireless {LAN} Medium Access Control {(MAC)} and 
+                   Physical Layer {(PHY)} Specification",
+  organization  = "IEEE",
+  address       = "Piscataway, NJ",
+  number        = "802.11",
+  year          = "1997"
+}
+
+
+standard with type and revision, the type overrides the word standard
+(or std.). Here a standard number is not available and a revision number
+is used.
+From the August 2000 issue of "IEEE Photonics Technology Letters",
+page 1048, reference #13.
+@standard{IEEEexample:standardproposed,
+  title         = "Fiber Channel Physical Interface ({FC-PI})",
+  institution   = "NCITS",
+  address       = "Washington, DC",
+  type          = "Working Draft Proposed Standard",
+  revision      = "5.2",
+  year          = "1999"
+}
+
+
+standard draft as a misc with author
+From the May 2002 issue of "IEEE Journal of Selected Areas in
+Communication", page 725, reference #16.
+@misc{IEEEexample:draftasmisc,
+  author        = "I. Widjaja and A. Elwalid",
+  title         = "{MATE}: {MPLS} Adaptive Traffic Engineering",
+  howpublished  = "IETF Draft",
+  year          = "1999"
+}
+
+
+
+
+
+misc for a techreport like reference
+techreport is not perfectly suitable because this entry lacks
+an institution field
+From the August 2001 issue of "IEEE/ACM Transactions on Networking",
+page 490, reference #22.
+@misc{IEEEexample:miscforum,
+  author        = "L. Roberts",
+  title         = "Enhanced Proportional Rate Control Algorithm {PRCA}",
+  howpublished  = "{ATM} Forum Contribution 94-0735R1",
+  month         = aug,
+  year          = "1994"
+}
+
+
+misc for a white paper
+From the August 2001 issue of "IEEE/ACM Transactions on Networking",
+page 478, reference #4 - Note that the reference there (improperly?)
+used the author field for "Cisco".
+@misc{IEEEexample:whitepaper,
+  title         = "Advanced {QoS} Services for the Intelligent Internet",
+  howpublished  = "White Paper",
+  organization  = "Cisco",
+  month         = may,
+  year          = "1997"
+}
+
+
+misc for a data sheet
+From the November 2000 issue of "IEEE Photonics Technology Letters",
+page 1551, reference #6.
+@misc{IEEEexample:datasheet,
+  title         = "{PDCA12-70} Data Sheet",
+  organization  = "Opto Speed SA",
+  address       = "Mezzovico, Switzerland"
+}
+
+
+
+
+
+Other unusual references
+
+a private communication as a misc entry type
+sometimes the designation "personal communication" is used instead
+From the June 2002 issue of "IEEE Transactions on Information Theory",
+page 1725, reference #16.
+@misc{IEEEexample:private,
+  author        = "S. Konyagin",
+  howpublished  = "private communication",
+  year          = "1998"
+}
+
+
+an internet request for comments (RFC) as a misc entry type
+It would also be nice to add a URL to these types of things.
+RFCs can also be handled as electronic references.
+From the April 2002 issue of "IEEE/ACM Transactions on Networking",
+page 181, reference #14.
+@misc{IEEEexample:miscrfc,
+  author        = "K. K. Ramakrishnan and S. Floyd",
+  title         = "A Proposal to Add Explicit Congestion
+                   Notification ({ECN}) to {IP}",
+  howpublished  = "RFC 2481",
+  month         = jan,
+  year          = "1999"
+}
+
+
+a software package as a manual
+From the June 2002 issue of "IEEE/ASME Journal of Microelectromechanical
+Systems", page 205, reference #20.
+Sometimes they put the version/release information in the title.
+@manual{IEEEexample:softmanual,
+  title         = "SaberDesigner Reference Manual",
+  organization  = "Analogy, Inc.",
+  address       = "Beaverton, OR",
+  year          = "1998",
+  note          = "Release 4.3"
+}
+
+
+a software package as an electronic reference
+From the February 2003 issue of  "IEEE/ACM Transactions on Networking",
+page 46, reference #24. If there is no author or organization, a sorting
+key is required for sorting styles. It might be a good idea to include
+month and year fields as well.
+@electronic{IEEEexample:softonline,
+  title         = "Ucb/lbnl/vint Network Simulator---ns (Version 2)",
+  url           = "http://www-mash.cs.berkeley.edu/ns/",
+  key           = "ns"
+}
+
+
+misc for a German regulation
+In German, the first letters of nouns are capitalized, so we do so here.
+From the June 2002 issue of "IEEE Journal in Selected Areas in
+Communication", page 892, reference #9.
+@misc{IEEEexample:miscgermanreg,
+  title         = "{M}essung von {S}t{\"o}rfeldern an {A}nlagen 
+                   und {L}eitungen der {T}elekommunikation im
+                   {F}requenzbereich 9 {kHz} bis 3 {GHz}",
+  language      = "german",
+  howpublished  = "{M}e{\ss}vorschrift {R}eg {TP} {MV} 05",
+  organization  = "Regulierungsbeh{\"o}rde f{\"u}r {T}elekommunikation und
+                   {P}ost ({R}eg {TP})"
+}
+
+
+
+Ways to handle things like CCSDS's Blue Books
+journal article with a URL. However, this is not a very good approach
+because the Blue Books are not really journals and the author field has
+to be abused.
+From the June 2002 issue of "IEEE Transactions on Information Theory",
+page 1461, reference #7.
+@article{IEEEexample:bluebookarticle,
+  author        = "{Consulative Committee for Space Data Systems (CCSDS)}",
+  title         = "Telemetry Channel Coding",
+  journal       = "Blue Book",
+  number        = "4",
+  year          = "1999",
+  url           = "http://www.ccsds.org/documents/pdf/CCSDS-101.0-B-4.pdf"
+}
+
+
+CCSDS's Blue Book handled as a book
+However, it is not a good idea to have to use the author field for
+an organization (done here because the book entry type requires an
+author field).
+@book{IEEEexample:bluebookbook,
+  author        = "{Consulative Committee for Space Data Systems (CCSDS)}",
+  title         = "Telemetry Channel Coding",
+  series        = "Blue Book",
+  number        = "4",
+  publisher     = "{CCSDS}",
+  address       = "Newport Beach, {CA}",
+  year          = "1999",
+  url           = "http://www.ccsds.org/documents/pdf/CCSDS-101.0-B-4.pdf"
+}
+
+
+CCSDS's Blue Book handled as a manual
+This is a much better approach, but uses the howpublished field.
+@manual{IEEEexample:bluebookmanual,
+  title         = "Telemetry Channel Coding",
+  howpublished  = "ser. Blue Book, No. 4",
+  organization  = "Consulative Committee for Space Data Systems (CCSDS)",
+  address       = "Newport Beach, CA",
+  year          = "1999",
+  url           = "http://www.ccsds.org/documents/pdf/CCSDS-101.0-B-4.pdf"
+}
+
+
+
+CCSDS's Blue Book handled as a standard
+Probably the best approach for this particular case because the work
+is standard related. Note that IEEE does not display the address for
+standards.
+@standard{IEEEexample:bluebookstandard,
+  title         = "Telemetry Channel Coding",
+  howpublished  = "ser. Blue Book, No. 4",
+  organization  = "Consulative Committee for Space Data Systems (CCSDS)",
+  address       = "Newport Beach, CA",
+  type          = "Recommendation for Space Data System Standard",
+  number        = "101.0-B-4",
+  month         = May,
+  year          = "1999",
+  url           = "http://www.ccsds.org/documents/pdf/CCSDS-101.0-B-4.pdf"
+}
+
+
+
+
+
+
+
+
+An example of a IEEEtran control entry which can change some IEEEtran.bst
+settings. An entry like this must be cited via \bstctlcite{} command
+before the first real \cite{}. The same entry key cannot be called twice
+(just like multiple \cite{} of the same entry key place only one entry
+in the bibliography.)
+The available control fields are:
+
+CTLuse_article_number
+"no" turns off the display of the number for articles.
+"yes" enables
+
+CTLuse_paper
+"no" turns off the display of the paper and type fields in inproceedings.
+"yes" enables
+
+CTLuse_forced_etal 
+"no" turns off the forced use of "et al."
+"yes" enables
+
+CTLmax_names_forced_etal
+The maximum number of names that can be present beyond which an "et al."
+usage is forced. Be sure that CTLnames_show_etal (below)
+is not greater than this value!
+
+CTLnames_show_etal
+The number of names that will be shown with a forced "et al.".
+Must be less than or equal to CTLmax_names_forced_etal
+
+CTLuse_alt_spacing 
+"no" turns off the alternate interword spacing for entries with URLs.
+"yes" enables
+
+CTLalt_stretch_factor
+If alternate interword spacing for entries with URLs is enabled, this is
+the interword spacing stretch factor that will be used. For example, the
+default "4" here means that the interword spacing in entries with URLs can
+stretch to four times normal. Does not have to be an integer.
+
+CTLdash_repeated_names
+"no" turns off the "dashification" of repeated (i.e., identical to those
+of the previous entry) names. IEEE normally does this.
+"yes" enables
+
+CTLname_format_string
+The name format control string as explained in the BibTeX style hacking
+guide.
+IEEE style "{f.~}{vv~}{ll}{, jj}" is the default,
+
+CTLname_latex_cmd
+A LaTeX command that each name will be fed to (e.g., "\textsc").
+Leave empty if no special font is desired for the names.
+The default is empty.
+
+CTLname_url_prefix
+The prefix text used before URLs.
+The default is "[Online]. Available:" A space will be inserted after this
+text. If this space is not wanted, just use \relax at the end of the
+prefix text.
+
+
+Those fields that are not to be changed can be left out.
+@IEEEtranBSTCTL{IEEEexample:BSTcontrol,
+  CTLuse_article_number     = "yes",
+  CTLuse_paper              = "yes",
+  CTLuse_forced_etal        = "no",
+  CTLmax_names_forced_etal  = "10",
+  CTLnames_show_etal        = "1",
+  CTLuse_alt_spacing        = "yes",
+  CTLalt_stretch_factor     = "4",
+  CTLdash_repeated_names    = "yes",
+  CTLname_format_string     = "{f.~}{vv~}{ll}{, jj}",
+  CTLname_latex_cmd         = "",
+  CTLname_url_prefix        = "[Online]. Available:"
+}
+
+From Wei's Thesis bib:
+
+@Article{ASHRAE93,
+   Title="Fundamentals: {ASHRAE} Handbook",
+   Year=1993}
+
+@Article{SirokyOldewurtelCiglerPrivara11,
+   Author="{\v{S}}irok{\`y}, Jan and Oldewurtel, Frauke and Cigler, Ji{\v{r}}{\'\i} and Pr{\'\i}vara, Samuel",
+   Title="Experimental analysis of model predictive control for an energy efficient building heating system",
+   Journal="Applied Energy",
+   Volume=88,
+   Number=9,
+   Pages="3079-3087",
+   Year=2011}
+
+@Misc{DOETotal11,
+   Author="{http://buildingsdatabook.eren.doe.gov/TableView.aspx?table=1.1.1}",
+   Title="{U.S.} Residential and Commercial Buildings Total Primary Energy Consumption (Quadrillion Btu and Percent of Total)",
+   Year=2011}
+
+@Misc{DOEShare11,
+   Author="{http://buildingsdatabook.eren.doe.gov/TableView.aspx?table=1.1.3}",
+   Title="Buildings Share of {U.S.} Primary Energy Consumption (Percent)",
+   Year=2011}
+
+@Misc{DOEElectricity11,
+   Author="{http://buildingsdatabook.eren.doe.gov/TableView.aspx?table=1.1.9}",
+   Title="Buildings Share of {U.S.} Electricity Consumption (Percent) ",
+   Year=2011}
+
+@Misc{AutomatedLogic14,
+   Author="{http://www.automatedlogic.com/product/webctrl/}",
+   Title="WebCTRL\textregistered",
+   Year=2014}
+
+@Article{RooftopHVACFDD12,
+   Author="{http://www.cacx.org/meetings/meetings/2012-08-09/NBI\_CCC\_Webinar\_080912.pdf}",
+   Title="Fault Detection \& Diagnostics {(FDD)} Rooftop {HVAC} Units: {T}echnology, Code Requirements, Commissioning",
+   Year=2012}
+
+@Article{Norlen90,
+   Author="{Norl\'{e}n}, U.",
+   Title="Estimating thermal parameters of outdoor test cells",
+   Journal="Building and Environment",
+   Volume=25,
+   Number=1,
+   Pages="17-24",
+   Abstract="A method for recursive identification of thermal parameters of outdoor test cells using monitoring data is presented. The method is based on a statistical autoregressive model (ARMAX-model). The heat loss coefficient and the effective solar aperture are obtained as rational polynomials of the parameters in the model. Dynamic thermal properties are obtained as the harmonic response to sinusoidal outdoor temperatures, solar irradiation and auxiliary energy inputs. An application of the method to data from a replicated experiment gave reproducible results. Another application of the method to data from a factorial experiment gave expected results.",
+   Year=1990}
+
+@Article{Rios-MorenoTrejo-PereaCastaneda-MirandaHernandez-GuzmanHerrera-Ruiz07,
+   Author="{R\'{\i}os-Moreno}, G. J. and Trejo-Perea, M. and {Casta\~{n}eda-Miranda}, R. and {Hern\'{a}ndez-Guzm\'{a}n}, V. M. and Herrera-Ruiz, G.",
+   Title="Modelling temperature in intelligent buildings by means of autoregressive models",
+   Journal="Automation in Construction",
+   Volume=16,
+   Number=5,
+   Pages="713-722",
+   Abstract="One of the main problems of the intelligent buildings is to give comfort to its occupants and to increase the user's performance at a low cost. The excessive demand of electric energy due to heating, ventilating, and air-conditioning (HVAC) systems require temperature forecast and control to make maximum reduction of the electrical energy. The objective of this paper is to investigate in what extent linear autoregressive models with external input (ARX) and autoregressive moving average models with external input (ARMAX), could be used in order to predict the interior air temperature of a building. In particular, the obtained results in the classrooms of the Universidad AutÛnoma de QuerÈtaro, U.A.Q., MÈxico, are shown. Outside air temperature, global solar radiation flux, outside air relative humidity and air velocity were used as the input variables. The obtained results showed that the ARX models give a better prediction of the temperature than the ARMAX models, obtaining the best results with the ARX (2,3,0) with a coefficient of determination of 0.9457 and ARX (2,2,1) with a coefficient of determination of 0.9056.",
+   Year=2007}
+
+@Article{AframJanabiSharifi14,
+   Author="Afram, Abdul and Janabi-Sharifi, Farrokh",
+   Title="Theory and applications of {HVAC} control {systems–A} review of model predictive control ({MPC})",
+   Journal="Building and Environment",
+   Volume=72,
+   Pages="343-355",
+   Year=2014}
+
+@Book{Anderson94,
+   Author="Anderson, T. W.",
+   Title="The Statistical Analysis of Time Series",
+   Publisher="Wiley-Interscience",
+   Edition="{R}eprint",
+   Year=1994}
+
+@Article{ASHRAE04,
+   Author="ASHRAE, ASHRAE Standard",
+   Title="Standard 90.1-2004, {E}nergy standard for buildings except low rise residential buildings",
+   Journal="American Society of Heating, Refrigerating and Air-Conditioning Engineers, Inc",
+   Year=2004}
+
+@Article{ASHRAE10,
+   Author="ASHRAE, Standard",
+   Title="Standard 62.1‐2010",
+   Journal="Ventilation for Acceptable Indoor Air Quality, ASHRAE",
+   Year=2010}
+
+@Article{AswaniMasterTanejaCullerTomlin12,
+   Author="Aswani, Anil and Master, Neal and Taneja, Jay and Culler, David and Tomlin, Claire",
+   Title="Reducing transient and steady state electricity consumption in hvac using learning-based model-predictive control",
+   Journal="Proceedings of the IEEE",
+   Volume=100,
+   Number=1,
+   Pages="240-253",
+   Year=2012}
+
+@Article{BaiWangZhang08,
+   Author="Bai, Jianbo and Wang, Shengwei and Zhang, Xiaosong",
+   Title="Development of an adaptive Smith predictor-based self-tuning {PI} controller for an {HVAC} system in a test room",
+   Journal="Energy and Buildings",
+   Volume=40,
+   Number=12,
+   Pages="2244-2252",
+   Year=2008}
+
+@Article{Dimitri82,
+   Author="Bertsekas, Dimitri P",
+   Title="Constrained optimization and Lagrange multiplier methods",
+   Journal="Computer Science and Applied Mathematics, Boston: Academic Press, 1982",
+   Volume=1,
+   Year=1982}
+
+@Book{Dimitri99,
+   Author="Bertsekas, Dimitri P",
+   Title="Nonlinear Programming",
+   Year=1999}
+
+@Article{BiCaiLeeWangHangZhang99,
+   Author="Bi, Qiang and Cai, Wen-Jian and Lee, Eng-Lock and Wang, Qing-Guo and Hang, Chang-Chieh and Zhang, Yong",
+   Title="Robust identification of first-order plus dead-time model from step response",
+   Journal="Control Engineering Practice",
+   Volume=7,
+   Number=1,
+   Pages="71-77",
+   Year=1999}
+
+@Article{BiCaiWangHangLeeSunLiuZhangZou00,
+   Author="Bi, Qiang and Cai, Wen-Jian and Wang, Qing-Guo and Hang, Chang-Chieh and Lee, Eng-Lock and Sun, Yong and Liu, Ke-Dian and Zhang, Yong and Zou, Biao",
+   Title="Advanced controller auto-tuning and its application in {HVAC} systems",
+   Journal="Control Engineering Practice",
+   Volume=8,
+   Number=6,
+   Pages="633-644",
+   Year=2000}
+
+@Book{BianchiSorrentino07,
+   Author="Bianchi, Giovanni and Sorrentino, Roberto",
+   Title="Electronic filter simulation & design",
+   Publisher="McGraw-Hill",
+   Year=2007}
+
+@Book{Brillinger01,
+   Author="Brillinger, David R.",
+   Title="Time Series: {D}ata Analysis and Theory",
+   Publisher="Society for Industrial and Applied Mathematics ",
+   Year=2001}
+
+@Book{Bryson75,
+   Author="Bryson, Arthur Earl",
+   Title="Applied Optimal Control: Optimization, Estimation and Control",
+   Publisher="CRC Press",
+   Year=1975}
+
+@Article{Butterworth30,
+   Author="Butterworth, Stephen",
+   Title="On the theory of filter amplifiers",
+   Journal="Wireless Engineer",
+   Volume=7,
+   Pages="536-541",
+   Year=1930}
+
+@Book{CamachoAlba13,
+   Author="Camacho, Eduardo F and Alba, Carlos Bordons",
+   Title="Model Predictive Control",
+   Publisher="Springer",
+   Year=2013}
+
+@Book{Candy86,
+   Author="Candy, James V",
+   Title="Signal processing: model based approach",
+   Publisher="McGraw-Hill, Inc.",
+   Year=1986}
+
+@Article{Chang04,
+   Author="Chang, Yung-Chung",
+   Title="A novel energy conservation method—optimal chiller loading",
+   Journal="Electric Power Systems Research",
+   Volume=69,
+   Number=2,
+   Pages="221-226",
+   Year=2004}
+
+@Article{ChowZhangLinSong02,
+   Author="Chow, TT and Zhang, GQ and Lin, Z and Song, CL",
+   Title="Global optimization of absorption chiller system by genetic algorithm and neural network",
+   Journal="Energy and buildings",
+   Volume=34,
+   Number=1,
+   Pages="103-109",
+   Year=2002}
+
+@InProceedings{ChristodoulakisBusawonCaplanStewart10,
+   Author="Christodoulakis, Georgios and Busawon, Krishna and Caplan, Nick and Stewart, Su",
+   Title="On the filtering and smoothing of biomechanical data",
+   BookTitle="Communication Systems Networks and Digital Signal Processing (CSNDSP), 2010 7th International Symposium on",
+   Publisher="IEEE",
+   Pages="512-516",
+   Year=2010}
+
+@Book{CEC13,
+   Author="Commission, California Energy",
+   Title="2013 Building Energy Efficiency Standards for Residential and Nonresidential Buildings",
+   Publisher="California Energy Commission",
+   Year=2013}
+
+@Article{CrawleyLawriePedersenWinkelmann00,
+   Author="Crawley, Drury B and Lawrie, Linda K and Pedersen, Curtis O and Winkelmann, Frederick C",
+   Title="Energy plus: energy simulation program",
+   Journal="ASHRAE journal",
+   Volume=42,
+   Number=4,
+   Pages="49-56",
+   Year=2000}
+
+@Article{DounisCaraiscos09,
+   Author="Dounis, Anastasios I and Caraiscos, Christos",
+   Title="Advanced control systems engineering for energy and comfort management in a building {environment-A} review",
+   Journal="Renewable and Sustainable Energy Reviews",
+   Volume=13,
+   Number=6,
+   Pages="1246-1261",
+   Year=2009}
+
+@Book{Fanger70,
+   Author="Fanger, P. O.",
+   Title="Thermal Comfort",
+   Publisher="Danish Technical Press.",
+   Address="Copenhagen",
+   Year=1970}
+
+@Article{FongHanbyChow06,
+   Author="Fong, Kwong Fai and Hanby, Victor Ian and Chow, Tin-Tai",
+   Title="{HVAC} system optimization for energy management by evolutionary programming",
+   Journal="Energy and Buildings",
+   Volume=38,
+   Number=3,
+   Pages="220-231",
+   Year=2006}
+
+@Article{FraustoPietersDeltour03,
+   Author="Frausto, H. Uchida and Pieters, J. G. and Deltour, J. M.",
+   Title="Modelling Greenhouse Temperature by means of Auto Regressive Models",
+   Journal="Biosystems Engineering",
+   Volume=84,
+   Number=2,
+   Pages="147-157",
+   Abstract="In this study, it was investigated to what extent linear auto regressive models with external input (ARX) and auto regressive moving average models with external input (ARMAX) could be used to describe the inside air temperature of an unheated, naturally ventilated greenhouse under Western European conditions. Outside air temperature and relative humidity, global solar radiation, and cloudiness of the sky were used as the input variables. Firstly, different models were built for the first and middle week of each season. The models were suitable to describe the greenhouse temperature evolution satisfactorily, except for the ventilation periods, apparently due to the non-linear effect of ventilation strategies. It was also observed that ARX models performed better than ARMAX models. None of the input variables could be omitted from models for a complete year. It was found that the application of a single model structure for a complete year required frequent retuning. Retuning when the goodness of fit falls below a pre-set threshold, proved to be more efficient than retuning at fixed time intervals in maintaining high accuracy.",
+   Year=2003}
+
+@Book{GillMurrayWright81,
+   Author="Gill, Philip E and Murray, Walter and Wright, Margaret H",
+   Title="Practical Optimization",
+   Year=1981}
+
+@Article{GoudaDanaherUnderwood02,
+   Author="Gouda, M. M. and Danaher, S. and Underwood, C. P.",
+   Title="Building thermal model reduction using nonlinear constrained optimization",
+   Journal="Building and Environment",
+   Volume=37,
+   Number=12,
+   Pages="1255-1265",
+   Year=2002}
+
+@Article{GuoYuLiuNing04,
+   Author="Guo, Hang and Yu, Min and Liu, Jingnan and Ning, Jinsheng",
+   Title="Butterworth low-pass filter for processing inertial navigation system raw data",
+   Journal="Journal of surveying engineering",
+   Volume=130,
+   Number=4,
+   Pages="175-178",
+   Year=2004}
+
+@InProceedings{HeAsada03,
+   Author="He, Xiang-Dong and Asada, H Harry",
+   Title="A new feedback linearization approach to advanced control of multi-unit {HVAC} systems",
+   BookTitle="American Control Conference, 2003. Proceedings of the 2003",
+   Publisher="IEEE",
+   Volume=3,
+   Pages="2311-2316",
+   Year=2003}
+
+@Book{HensonSeborg97,
+   Author="Henson, Michael A and Seborg, Dale E",
+   Title="Nonlinear Process Control",
+   Publisher="Prentice-Hall, Inc.",
+   Year=1997}
+
+@Article{HouLianYaoYuan06,
+   Author="Hou, Zhijian and Lian, Zhiwei and Yao, Ye and Yuan, Xinjian",
+   Title="Data mining based sensor fault diagnosis and validation for building air conditioning system",
+   Journal="Energy Conversion and Management",
+   Volume=47,
+   Number=15,
+   Pages="2479-2490",
+   Year=2006}
+
+@Article{HouseSmithArora91,
+   Author="House, JM and Smith, TF and Arora, JS",
+   Title="Optimal control of a thermal system",
+   Journal="ASHRAE Transactions",
+   Volume=97,
+   Number=2,
+   Pages="991-1001",
+   Year=1991}
+
+@InProceedings{Hovd11,
+   Author="Hovd, Morten",
+   Title="Multi-level Programming for Designing Penalty Functions for {MPC} Controllers",
+   BookTitle="Proceedings of the 18th IFAC World Congress",
+   Pages="6098-6103",
+   Year=2011}
+
+@Article{Huang11,
+   Author="Huang, Gongsheng",
+   Title="Model predictive control of {VAV} zone thermal systems concerning bi-linearity and gain nonlinearity",
+   Journal="Control Engineering Practice",
+   Volume=19,
+   Number=7,
+   Pages="700-710",
+   Year=2011}
+
+@Article{JetteZaheerFazio98,
+   Author="Jette, I and Zaheer-Uddin, M and Fazio, P",
+   Title="{PI}-control of dual duct systems: manual tuning and control loop interaction",
+   Journal="Energy conversion and management",
+   Volume=39,
+   Number=14,
+   Pages="1471-1482",
+   Year=1998}
+
+@Article{JinCaiLuLeeChiang07,
+   Author="Jin, Guang-Yu and Cai, Wen-Jian and Lu, Lu and Lee, Eng Lock and Chiang, Andrew",
+   Title="A simplified modeling of mechanical cooling tower for control and optimization of {HVAC} systems",
+   Journal="Energy conversion and management",
+   Volume=48,
+   Number=2,
+   Pages="355-365",
+   Year=2007}
+
+@Article{Kalogirou09,
+   Author="Kalogirou, Soteris A",
+   Title="Artificial neural networks and genetic algorithms in energy applications in buildings",
+   Journal="Advances in Building Energy Research",
+   Volume=3,
+   Number=1,
+   Pages="83-119",
+   Year=2009}
+
+@InProceedings{KelmanBorrelli11,
+   Author="Kelman, Anthony and Borrelli, Francesco",
+   Title="Bilinear model predictive control of a {HVAC} system using sequential quadratic programming",
+   BookTitle="IFAC World Congress",
+   Year=2011}
+
+@Book{Klein79,
+   Author="Klein, Sanford A",
+   Title="TRNSYS, a transient system simulation program",
+   Publisher="Solar Energy Laborataory, University of Wisconsin--Madison",
+   Year=1979}
+
+@InProceedings{KnabeFelsmann97,
+   Author="Knabe, Gottfried and Felsmann, Clemens",
+   Title="Optimal Operation Control of {HVAC} Systems",
+   BookTitle="Proceedings of 5th IBPSA Conference",
+   Year=1997}
+
+@Article{KolokotsaTsiavosStavrakakisKalaitzakisAntonidakis01,
+   Author="Kolokotsa, D and Tsiavos, D and Stavrakakis, GS and Kalaitzakis, K and Antonidakis, E",
+   Title="Advanced fuzzy logic controllers design and evaluation for buildings’ occupants thermal–visual comfort and indoor air quality satisfaction",
+   Journal="Energy and buildings",
+   Volume=33,
+   Number=6,
+   Pages="531-543",
+   Year=2001}
+
+@Article{KrakowLin95,
+   Author="Krakow, Kalman I and Lin, Sui",
+   Title="{PI} Control of Fan Speed to Maintain Constant Discharge Pressure",
+   Journal="ASHRAE Transactions-American Society of Heating Refrigerating Airconditioning Engin",
+   Volume=101,
+   Number=2,
+   Pages="398-407",
+   Year=1995}
+
+@Article{KusiakXu12,
+   Author="Kusiak, Andrew and Xu, Guanglin",
+   Title="Modeling and optimization of {HVAC} systems using a dynamic neural network",
+   Journal="Energy",
+   Volume=42,
+   Number=1,
+   Pages="241-250",
+   Year=2012}
+
+@Article{LyuJiaKongZhang07,
+   Author="L{\"u}, Hong and Jia, Lei and Kong, Shulan and Zhang, Zhaosheng",
+   Title="Predictive functional control based on fuzzy {TS} model for {HVAC} systems temperature control",
+   Journal="Journal of Control Theory and Applications",
+   Volume=5,
+   Number=1,
+   Pages="94-98",
+   Year=2007}
+
+@InProceedings{LiangDu05,
+   Author="Liang, Jian and Du, Ruxu",
+   Title="Thermal comfort control based on neural network for {HVAC} application",
+   BookTitle="Control Applications",
+   Publisher="IEEE",
+   Pages="819-824",
+   Year=2005}
+
+@Book{Lindner99,
+   Author="Lindner, Douglas K",
+   Title="Introduction to signals and systems",
+   Publisher="McGraw-Hill",
+   Year=1999}
+
+@Article{MaBorrelliHenceyCoffeyBengeaHaves12,
+   Author="Ma, Yudong and Borrelli, Francesco and Hencey, Brandon and Coffey, Brian and Bengea, Sorin and Haves, Philip",
+   Title="Model predictive control for the operation of building cooling systems",
+   Journal="Control Systems Technology, IEEE Transactions on",
+   Volume=20,
+   Number=3,
+   Pages="796-803",
+   Year=2012}
+
+@InProceedings{Maasoumy14,
+   Author="Maasoumy, Mehdi",
+   Title="Comparison of Control Strategies for Energy Efficient Building {HVAC} Systems",
+   BookTitle="ACM Symposium on Simulation for Architecture and Urban Design (SimAUD 2014)",
+   Year=2014}
+
+@Article{MaasoumySangiovanni12,
+   Author="Maasoumy, Mehdi and Sangiovanni-Vincentelli, Alberto",
+   Title="Total and peak energy consumption minimization of building {HVAC} systems using model predictive control",
+   Journal="IEEE Design & Test of Computers",
+   Volume=29,
+   Number=4,
+   Year=2012}
+
+@Article{MagnierHaghighat10,
+   Author="Magnier, Laurent and Haghighat, Fariborz",
+   Title="Multiobjective optimization of building design using {TRNSYS} simulations, genetic algorithm, and {A}rtificial {N}eural {N}etwork",
+   Journal="Building and Environment",
+   Volume=45,
+   Number=3,
+   Pages="739-746",
+   Year=2010}
+
+@Article{Marletta01,
+   Author="Marletta, Luigi",
+   Title="A comparison of methods for optimizing air-conditioning systems according to the exergonomic approach",
+   Journal="Journal of energy resources technology",
+   Volume=123,
+   Number=4,
+   Pages="304-310",
+   Year=2001}
+
+@Article{MarquardtMai94,
+   Author="Marquardt, Christian and Mai, Norbert",
+   Title="A computational procedure for movement analysis in handwriting",
+   Journal="Journal of neuroscience methods",
+   Volume=52,
+   Number=1,
+   Pages="39-45",
+   Year=1994}
+
+@Book{Moler04,
+   Author="Moler, Cleve",
+   Title="Numerical Computing with {MATLAB}",
+   Publisher="The Society for Industrial and Applied Mathematics",
+   Address="Philadelphia",
+   Edition="{R}evised {R}eprint",
+   Year=2004}
+
+@Article{MoradiSaffarNejad11,
+   Author="Moradi, Hamed and Saffar-Avval, Majid and Bakhtiari-Nejad, Firooz",
+   Title="Nonlinear multivariable control and performance analysis of an air-handling unit",
+   Journal="Energy and Buildings",
+   Volume=43,
+   Number=4,
+   Pages="805-813",
+   Year=2011}
+
+@Article{MorosanBourdaisDumurBuisson10,
+   Author="Moro{\c{s}}an, Petru-Daniel and Bourdais, Romain and Dumur, Didier and Buisson, Jean",
+   Title="Building temperature regulation using a distributed model predictive control",
+   Journal="Energy and Buildings",
+   Volume=42,
+   Number=9,
+   Pages="1445-1452",
+   Year=2010}
+
+@InProceedings{MuskeHowseHansen00,
+   Author="Muske, Kenneth R and Howse, James W and Hansen, Gen A",
+   Title="Lagrangian solution methods for nonlinear model predictive control",
+   BookTitle="American Control Conference, 2000. Proceedings of the 2000",
+   Publisher="IEEE",
+   Volume=6,
+   Pages="4239-4243",
+   Year=2000}
+
+@Article{MustafarajChenLowry10,
+   Author="Mustafaraj, G. and Chen, J. and Lowry, G.",
+   Title="Development of room temperature and relative humidity linear parametric models for an open office using {BMS} data",
+   Journal="Energy and Buildings",
+   Volume=42,
+   Number=3,
+   Pages="348-356",
+   Abstract="This study investigates Box-Jenkins (BJ), autoregressive with external inputs (ARX), autoregressive moving average with external inputs (ARMAX) and output error (OE) models to identify the thermal behaviour of an office positioned in a modern commercial building in London. These models can all be potentially used for improving the performance of the thermal environment control system. External and internal climate data, recorded over the summer, autumn and winter seasons, were used to build and validate the models. The paper demonstrates the potential of using linear parametric models to predict room temperature and relative humidity for different time scales (30 min or 2 h ahead). The prediction performance is evaluated using the criteria of goodness of fit, coefficient of determination, mean absolute error and mean squared error between predicted model output and real measurements. The results demonstrate that all models provide reasonably good predictions but the BJ model outperforms the ARMAX and ARX models. 2009 Elsevier B.V. All rights reserved.",
+   Year=2010}
+
+@Article{NaiduRieger11,
+   Author="Naidu, D Subbaram and Rieger, Craig G",
+   Title="Advanced control strategies for heating, ventilation, air-conditioning, and refrigeration {systems—An} overview: Part {I}: {H}ard control",
+   Journal="HVAC&R Research",
+   Volume=17,
+   Number=1,
+   Pages="2-21",
+   Year=2011}
+
+@Article{NaiduRieger11b,
+   Author="Naidu, D Subbaram and Rieger, Craig G",
+   Title="Advanced control strategies for heating, ventilation, air-conditioning, and refrigeration {systems—An} overview: Part {II}: {Soft} and fusion control",
+   Journal="HVAC&R Research",
+   Volume=17,
+   Number=2,
+   Pages="144-158",
+   Year=2011}
+
+@Article{Nassif10,
+   Author="Nassif, N.",
+   Title="Performance analysis of supply and return fans for {HVAC} systems under different operating strategies of economizer dampers",
+   Journal="Energy and Buildings",
+   Volume=42,
+   Number=7,
+   Pages="1026-1037",
+   Year=2010}
+
+@Article{NassifMoujaes08,
+   Author="Nassif, Nabil and Moujaes, Samir",
+   Title="A new operating strategy for economizer dampers of {VAV} system",
+   Journal="Energy and Buildings",
+   Volume=40,
+   Number=3,
+   Pages="289-299",
+   Year=2008}
+
+@InProceedings{NedelcuNecoara12,
+   Author="Nedelcu, V. and Necoara, I.",
+   Title="Iteration complexity of an inexact augmented Lagrangian method for constrained {MPC}",
+   BookTitle="Decision and Control (CDC)",
+   Pages="650-655",
+   Year=2012}
+
+@Book{NorgaardRavnPoulsenHansen00,
+   Author="Norgaard, M. and Ravn, O. and Poulsen, N. K. and Hansen, L. K.",
+   Title="Neural Networks for Modeling and Control of Dynamic Systems",
+   Publisher="Springer-Verlag",
+   Year=2000}
+
+@Book{OgunnaikeRay94,
+   Author="Ogunnaike, Babatunde Ayodeji and Ray, Willis Harmon",
+   Title="Process Dynamics, Modeling, and Control",
+   Publisher="Oxford University Press New York",
+   Volume=9,
+   Year=1994}
+
+@Book{Orfanidis95,
+   Author="Orfanidis, Sophocles J",
+   Title="Introduction to Signal Processing",
+   Publisher="Prentice-Hall, Inc.",
+   Year=1995}
+
+@Article{PerssonFiedlerNordlanderBalesPaavilainen09,
+   Author="Persson, Tomas and Fiedler, Frank and Nordlander, Svante and Bales, Chris and Paavilainen, Janne",
+   Title="Validation of a dynamic model for wood pellet boilers and stoves",
+   Journal="Applied Energy",
+   Volume=86,
+   Number=5,
+   Pages="645-656",
+   Year=2009}
+
+@Article{PrivaraSirokyFerklCigler11,
+   Author="Pr{\'\i}vara, Samuel and {\v{S}}irok{\`y}, Jan and Ferkl, Luk{\'a}{\v{s}} and Cigler, Ji{\v{r}}{\'\i}",
+   Title="Model predictive control of a building heating system: {T}he first experience",
+   Journal="Energy and Buildings",
+   Volume=43,
+   Number=2,
+   Pages="564-572",
+   Year=2011}
+
+@Article{PrivaraCiglerVanaOldewurtelSagerschnigZacekova13,
+   Author="Pr{\'\i}vara, Samuel and Cigler, Ji{\v{r}}{\'\i} and V{\'a}{\v{n}}a, Zden{\v{e}}k and Oldewurtel, Frauke and Sagerschnig, Carina and {\v{Z}}{\'a}{\v{c}}ekov{\'a}, Eva",
+   Title="Building modeling as a crucial part for building predictive control",
+   Journal="Energy and Buildings",
+   Volume=56,
+   Pages="8-22",
+   Year=2013}
+
+@InProceedings{RehrlHorn11,
+   Author="Rehrl, Jakob and Horn, Martin",
+   Title="Temperature control for {HVAC} systems based on exact linearization and model predictive control",
+   BookTitle="Control Applications (CCA)",
+   Publisher="IEEE",
+   Pages="1119-1124",
+   Year=2011}
+
+@InProceedings{RichterMorariJones11,
+   Author="Richter, Stefan and Morari, Manfred and Jones, Colin Neil",
+   Title="Towards computational complexity certification for constrained {MPC} based on Lagrange relaxation and the fast gradient method",
+   BookTitle="Decision and Control and European Control Conference (CDC-ECC)",
+   Publisher="IEEE",
+   Pages="5223-5229",
+   Year=2011}
+
+@InProceedings{Salsbury05,
+   Author="Salsbury, Timothy",
+   Title="A survey of control technologies in the building automation industry",
+   BookTitle="the 16th IFAC World Congress",
+   Pages="1396-1407",
+   Year=2005}
+
+@Article{SavitzkyGolay64,
+   Author="Savitzky, Abraham and Golay, Marcel JE",
+   Title="Smoothing and differentiation of data by simplified least squares procedures",
+   Journal="Analytical chemistry",
+   Volume=36,
+   Number=8,
+   Pages="1627-1639",
+   Year=1964}
+
+@Article{Schafer11,
+   Author="Schafer, Ronald W",
+   Title="What is a {S}avitzky-{G}olay filter?",
+   Journal="Signal Processing Magazine, IEEE",
+   Volume=28,
+   Number=4,
+   Pages="111-117",
+   Year=2011}
+
+@Article{SeemHouse10,
+   Author="Seem, JE and House, JM",
+   Title="Development and evaluation of optimization-based air economizer strategies",
+   Journal="Applied Energy",
+   Volume=87,
+   Number=3,
+   Pages="910-924",
+   Year=2010}
+
+@Misc{Seem98,
+   Author="Seem, John E",
+   Title="Air handling unit including control system that prevents outside air from entering the unit through an exhaust air damper",
+   Publisher="Google Patents",
+   Year=1998}
+
+@InProceedings{SongLiu03,
+   Author="Song, L. and Liu, M.",
+   Title="Optimal Outside Airflow Control of Integrated Air Handling Unit System for Large Office Buildings",
+   BookTitle="ASME 2003 International Solar Energy Conference",
+   Publisher="American Society of Mechanical Engineers",
+   Pages="37-44",
+   Year=2003}
+
+@Article{SunHuangLiWang13,
+   Author="Sun, Y. and Huang, G. and Li, Z. and Wang, S.",
+   Title="Multiplexed optimization for complex air conditioning systems",
+   Journal="Building and Environment",
+   Volume=65,
+   Pages="99-108",
+   Year=2013}
+
+@Article{ToNdelJohansenBemporad03,
+   Author="T{\o}Ndel, Petter and Johansen, Tor Arne and Bemporad, Alberto",
+   Title="An algorithm for multi-parametric quadratic programming and explicit {MPC} solutions",
+   Journal="Automatica",
+   Volume=39,
+   Number=3,
+   Pages="489-497",
+   Year=2003}
+
+@Article{TashtoushMolhimAlRousan05,
+   Author="Tashtoush, B. and Molhim, M. and Al-Rousan, M.",
+   Title="Dynamic model of an {HVAC} system for control analysis",
+   Journal="Energy",
+   Volume=30,
+   Number=10,
+   Pages="1729-1745",
+   Year=2005}
+
+@Article{ThosarPatraBhattacharyya08,
+   Author="Thosar, Archana and Patra, Amit and Bhattacharyya, Souvik",
+   Title="Feedback linearization based control of a variable air volume air conditioning system for cooling applications",
+   Journal="ISA transactions",
+   Volume=47,
+   Number=3,
+   Pages="339-349",
+   Year=2008}
+
+@InProceedings{WangLiu06,
+   Author="Wang, G and Liu, M",
+   Title="Optimal outside air control for air handling units with humidity control",
+   BookTitle="Proceedings of the 6th International Conference for Enhanced Building Operations, Shenzhen, China",
+   Year=2006}
+
+@Article{WangSong12,
+   Author="Wang, G. and Song, L.",
+   Title="Air handling unit supply air temperature optimal control during economizer cycles",
+   Journal="Energy and Buildings",
+   Volume=49,
+   Pages="310-316",
+   Year=2012}
+
+@Article{WangJin00,
+   Author="Wang, Shengwei and Jin, Xinqiao",
+   Title="Model-based optimal control of {VAV} air-conditioning system using genetic algorithm",
+   Journal="Building and Environment",
+   Volume=35,
+   Number=6,
+   Pages="471-487",
+   Year=2000}
+
+@Article{WangMa08,
+   Author="Wang, Shengwei and Ma, Zhenjun",
+   Title="Supervisory and optimal control of building {HVAC} systems: {A} review",
+   Journal="HVAC&R Research",
+   Volume=14,
+   Number=1,
+   Pages="3-32",
+   Year=2008}
+
+@Article{WangWang03,
+   Author="Wang, Shengwei and Wang, Jin-Bo",
+   Title="Robust sensor fault diagnosis and validation in {HVAC} systems",
+   Journal="Transactions of the Institute of Measurement and Control",
+   Volume=24,
+   Number=3,
+   Pages="231-262",
+   Year=2002}
+
+@Article{WangXu04,
+   Author="Wang, Shengwei and Xu, Xinhua",
+   Title="Optimal and robust control of outdoor ventilation airflow rate for improving energy efficiency and {IAQ}",
+   Journal="Building and Environment",
+   Volume=39,
+   Number=7,
+   Pages="763-773",
+   Year=2004}
+
+@Article{WangXu06,
+   Author="Wang, S. and Xu, X.",
+   Title="Parameter estimation of internal thermal mass of building dynamic models using genetic algorithm",
+   Journal="Energy Conversion and Management",
+   Volume=47,
+   Number=13,
+   Pages="1927-1941",
+   Year=2006}
+
+@Article{WangKatipamulaHuangBrambley13,
+   Author="Wang, W. and Katipamula, S. and Huang, Y. and Brambley, M. R.",
+   Title="Energy savings and economics of advanced control strategies for packaged air conditioners with gas heat",
+   Journal="Energy and Buildings",
+   Volume=65,
+   Pages="497-507",
+   Year=2013}
+
+@Article{WangCaiSohLiLuXie04,
+   Author="Wang, Yao-Wen and Cai, Wen-Jian and Soh, Yeng-Chai and Li, Shu-Jiang and Lu, Lu and Xie, Lihua",
+   Title="A simplified modeling of cooling coils for control and optimization of {HVAC} systems",
+   Journal="Energy Conversion and Management",
+   Volume=45,
+   Number=18,
+   Pages="2915-2930",
+   Year=2004}
+
+@Book{Watkins91,
+   Author="Watkins, DS",
+   Title="Fundamentals of Matrix Computations",
+   Publisher="John Wiley & Sons",
+   Year=1991}
+
+@PhDThesis{Wu13,
+   Author="Wu, Siyu",
+   Title="System-Level Monitoring and Diagnosis of Building HVAC System",
+   School="University of California, Merced",
+   Year=2013}
+
+@Article{WuSun12l,
+   Author="Wu, Siyu and Sun, Jian-Qiao",
+   Title="Multi-stage regression linear parametric models of room temperature in office buildings",
+   Journal="Building and Environment",
+   Volume=56,
+   Pages="69-77",
+   Year=2012}
+
+@Article{WuSun11,
+   Author="Wu, S. and Sun, J. Q.",
+   Title="Cross-level fault detection and diagnosis of building {HVAC} systems",
+   Journal="Building and Environment",
+   Volume=46,
+   Number=8,
+   Pages="1558-1566",
+   Year=2011}
+
+@Article{WuSun12,
+   Author="Wu, Siyu and Sun, J. Q.",
+   Title="A physics-based linear parametric model of room temperature in office buildings",
+   Journal="Building and Environment",
+   Volume=50,
+   Pages="1-9, DOI: 10.1016/j.buildenv.2011.10.005",
+   Abstract="This paper presents a physics-based autogregressive moving average (ARMAX) model of room temperature in office buildings. Thermodynamic equations are used to determine the structure and order of the model. Extensive measurements over 109 days are used to develop and validate the model. The model can be used to predict the room temperature variations accurately in both short-term and long-term periods, as long as ten weeks with a mean squared error less than 0.01 and a coefficient of determination larger than 0.99. This model also provides an analytical foundation of the previously proposed spatial and temporal partition strategy of VAVs for fault detection of HVAC systems, and is suitable for real-time fault detection and control applications.",
+   Year=2012}
+
+@Article{WuSun12c,
+   Author="Wu, Siyu and Sun, J. Q.",
+   Title="{Two-stage} regression model of thermal comfort in office buildings",
+   Journal="Building and Environment",
+   Volume=57,
+   Pages="88-96",
+   Abstract="Models of the predicted mean vote (PMV) play an important role in evaluation of thermal comfort and control design of heating, ventilation, and air conditioning (HVAC) systems. In this article, we present a novel two-stage regression representation of the ASHRAE empirical PMV model that incorporates architectural parameters and control variables as predictors. Extensive measurements from an office building are used to develop and validate the regression model. The resulting model can predict the PMV in different rooms accurately in both short-term and long-term. Over a period of four weeks, for example, the predictions of the PMV have a root mean squared error less than 0.04 with a coefficient of determination larger than 0.96.",
+   Year=2012}
+
+@Article{XiPooChou07,
+   Author="Xi, Xue-Cheng and Poo, Aun-Neow and Chou, Siaw-Kiang",
+   Title="Support vector regression model predictive control on a {HVAC} plant",
+   Journal="Control Engineering Practice",
+   Volume=15,
+   Number=8,
+   Pages="897-908",
+   Year=2007}
+
+@Article{YiuWang07,
+   Author="Yiu, J. C. M. and Wang, Shengwei",
+   Title="Multiple {ARMAX} modeling scheme for forecasting air conditioning system performance",
+   Journal="Energy Conversion and Management",
+   Volume=48,
+   Number=8,
+   Pages="2276-2285",
+   Abstract="System identification is a procedure to characterize the dynamic behavior of a system, subsystem or individual component from measured data. This paper presents a study on the modeling and parameter identification of air conditioning processes by using the mathematical black box modeling technique, autoregressive moving average exogeneous (ARMAX) structure. A generic multiple input multiple output (MIMO) ARMAX structure of typical air conditioning systems is developed, whose parameters are identified by using the recursive extended least squares (RELS) method. The performance of the model is compared with that of a single input single output (SISO) ARMAX model. A significant component of the determination of an ARMAX model is the selection of an appropriate model order. Models of different orders and the effects of properties are evaluated. Site measurements from an air conditioning system in a building are used for the testing and validation of the models in the study.",
+   Year=2007}
+
+@Article{YoshidaKumar99,
+   Author="Yoshida, H. and Kumar, S.",
+   Title="{RARX} algorithm based model development and application to real time data for on-line fault detection in {VAV} {AHU} units",
+   Journal="IBPSA Building Simulation",
+   Volume=99,
+   Pages="161-168",
+   Year=1999}
+
+@Article{YuanPerez06,
+   Author="Yuan, Shui and Perez, Ronald A",
+   Title="Model predictive control of supply air temperature and outside air intake rate of a {VAV} air-handling unit",
+   Journal="ASHRAE transactions",
+   Pages="145-161",
+   Year=2006}
+
+@Article{Zavala12,
+   Author="Zavala, V. M.",
+   Title="Real-Time Optimization Strategies for Building Systems†",
+   Journal="Industrial & Engineering Chemistry Research",
+   Volume=52,
+   Number=9,
+   Pages="3137-3150",
+   Year=2012}
+
+@Book{ZhouDoyleGlover96,
+   Author="Zhou, Kemin and Doyle, John Comstock and Glover, Keith",
+   Title="Robust and Optimal Control",
+   Publisher="Prentice Hall New Jersey",
+   Volume=40,
+   Year=1996}
+
+
+
+Below are our citations:
+@misc{eia2021energy,
+  title={Energy Information Administration Monthly Energy Review},
+  organization  = "US EIA",
+  month  = apr,
+  year= "2021"
+}
+
+@misc{bls2021indoor,
+  title = {Waking hours spent at various locations, by sex and day of week, averages for {May} to {December}, 2019 and 2020 {[Table]}},
+  organization  = {{U.S. Bureau of Labor Statistics}},
+  url = "https://www.bls.gov/news.release/atus.t10.htm",
+  month  = jul,
+  year="2021"
+}
+
+@article{capuano2019annual,
+  title={Annual energy outlook 2019},
+  author={Capuano, DL},
+  journal={Washington, DC: US Energy Information Administration},
+  year={2019}
+}
+
+@electronic{pnnl2021vav,
+  author        = "Tim Yoder",
+  title         = "Variable Air Volume ({VAV}) Systems Operations and Maintenance",
+  url           = "https://www.pnnl.gov/projects/best-practices/variable-air-volume-systems",
+  month         = apr,
+  year          = "2021"
+}
+
+@article{gouda2000low,
+  title={Low-order model for the simulation of a building and its heating system},
+  author={Gouda, MM and Danaher, Sean and Underwood, CP},
+  journal={Building Services Engineering Research and Technology},
+  volume={21},
+  number={3},
+  pages={199--208},
+  year={2000},
+  publisher={Sage Publications Sage CA: Thousand Oaks, CA}
+}
+
+@article{bueno2012resistance,
+  title={A resistance-capacitance network model for the analysis of the interactions between the energy performance of buildings and the urban climate},
+  author={Bueno, Bruno and Norford, Leslie and Pigeon, Gr{\'e}goire and Britter, Rex},
+  journal={Building and Environment},
+  volume={54},
+  pages={116--125},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{he2014performance,
+  title={Performance optimization of HVAC systems with computational intelligence algorithms},
+  author={He, Xiaofei and Zhang, Zijun and Kusiak, Andrew},
+  journal={Energy and Buildings},
+  volume={81},
+  pages={371--380},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{huang2015new,
+  title={A new model predictive control scheme for energy and cost savings in commercial buildings: An airport terminal building case study},
+  author={Huang, Hao and Chen, Lei and Hu, Eric},
+  journal={Building and environment},
+  volume={89},
+  pages={203--216},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@article{garnier2015predictive,
+  title={Predictive control of multizone heating, ventilation and air-conditioning systems in non-residential buildings},
+  author={Garnier, Antoine and Eynard, Julien and Caussanel, Matthieu and Grieu, St{\'e}phane},
+  journal={Applied Soft Computing},
+  volume={37},
+  pages={847--862},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@article{kim2016simulation,
+  title={Simulation-based optimization of an integrated daylighting and HVAC system using the design of experiments method},
+  author={Kim, Wonuk and Jeon, Yongseok and Kim, Yongchan},
+  journal={Applied Energy},
+  volume={162},
+  pages={666--674},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@article{ferreira2012neural,
+  title={Neural networks based predictive control for thermal comfort and energy savings in public buildings},
+  author={Ferreira, PM and Ruano, AE and Silva, S and Conceicao, EZE},
+  journal={Energy and buildings},
+  volume={55},
+  pages={238--251},
+  year={2012},
+  publisher={Elsevier}
+}
+@article{lee2015optimal,
+  title={Optimal HVAC control as demand response with on-site energy storage and generation system},
+  author={Lee, Young M and Horesh, Raya and Liberti, Leo},
+  journal={Energy Procedia},
+  volume={78},
+  pages={2106--2111},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@article{asadi2014multi,
+  title={Multi-objective optimization for building retrofit: A model using genetic algorithm and artificial neural network and an application},
+  author={Asadi, Ehsan and da Silva, Manuel Gameiro and Antunes, Carlos Henggeler and Dias, Lu{\'\i}s and Glicksman, Leon},
+  journal={Energy and Buildings},
+  volume={81},
+  pages={444--456},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{kusiak2011multi,
+  title={Multi-objective optimization of HVAC system with an evolutionary computation algorithm},
+  author={Kusiak, Andrew and Tang, Fan and Xu, Guanglin},
+  journal={Energy},
+  volume={36},
+  number={5},
+  pages={2440--2449},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@article{ruano2016imbpc,
+  title={The IMBPC HVAC system: A complete MBPC solution for existing HVAC systems},
+  author={Ruano, Antonio E and Pesteh, Shabnam and Silva, Sergio and Duarte, Helder and Mestre, Gon{\c{c}}alo and Ferreira, Pedro M and Khosravani, Hamid R and Horta, Ricardo},
+  journal={Energy and Buildings},
+  volume={120},
+  pages={145--158},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@article{kusiak2010modeling,
+  title={Modeling and optimization of HVAC energy consumption},
+  author={Kusiak, Andrew and Li, Mingyang and Tang, Fan},
+  journal={Applied Energy},
+  volume={87},
+  number={10},
+  pages={3092--3102},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{kusiak2014minimization,
+  title={Minimization of energy consumption in HVAC systems with data-driven models and an interior-point method},
+  author={Kusiak, Andrew and Xu, Guanglin and Zhang, Zijun},
+  journal={Energy Conversion and Management},
+  volume={85},
+  pages={146--153},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{afram2017artificial,
+  title={Artificial neural network (ANN) based model predictive control (MPC) and optimization of HVAC systems: A state of the art review and case study of a residential HVAC system},
+  author={Afram, Abdul and Janabi-Sharifi, Farrokh and Fung, Alan S and Raahemifar, Kaamran},
+  journal={Energy and Buildings},
+  volume={141},
+  pages={96--113},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@book{liang2014modeling,
+  title={Modeling and control of AHUs in building HVAC system},
+  author={Liang, Wei},
+  year={2014},
+  publisher={University of California, Merced}
+}
+
+@article{bushby1997bacnettm,
+  title={BACnetTM: a standard communication infrastructure for intelligent buildings},
+  author={Bushby, Steven T},
+  journal={Automation in Construction},
+  volume={6},
+  number={5-6},
+  pages={529--540},
+  year={1997},
+  publisher={Elsevier}
+}
+
+@electronic{webctrl2022alc,
+  title         = "Web{CTRL}\textsuperscript{\textregistered} BUILDING AUTOMATION SYSTEM",
+  url           = "https://www.automatedlogic.com/en/products/webctrl-building-automation-system/",
+  year          = "2022",
+}
+
+@electronic{wwo2022api,
+  title         = "Weather API and Data for Businesses and Developers",
+  url           = "https://www.worldweatheronline.com/developer/",
+  year          = "2022",
+}
+
+@inproceedings{chen2000comments,
+  title={Comments on United States Patent 3,555,252--Learning control of actuators in control systems},
+  author={Chen, Yangquan and Moore, Kevin L},
+  booktitle={Proceedings of the 2000 International Conference on Automation, Robotics, and Control},
+  year={2000}
+}
+
+@article{bristow2006survey,
+  title={A survey of iterative learning control},
+  author={Bristow, Douglas A and Tharayil, Marina and Alleyne, Andrew G},
+  journal={IEEE control systems magazine},
+  volume={26},
+  number={3},
+  pages={96--114},
+  year={2006},
+  publisher={IEEE}
+}
+
+@article{ahn2x007iterative,
+  title={Iterative learning control: Brief survey and categorization},
+  author={Ahn, Hyo-Sung and Chen, YangQuan and Moore, Kevin L},
+  journal={IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)},
+  volume={37},
+  number={6},
+  pages={1099--1121},
+  year={2007},
+  publisher={IEEE}
+}
+
+@article{moore1993iterative,
+  title={Iterative learning control: An overview},
+  author={Moore, Kevin L},
+  journal={Iterative Learning Control for Deterministic Systems},
+  pages={9--22},
+  year={1993},
+  publisher={Springer}
+}
+
+@inproceedings{minakais2014groundhog,
+  title={Groundhog day: Iterative learning for building temperature control},
+  author={Minakais, Matt and Mishra, Sandipan and Wen, John T},
+  booktitle={2014 IEEE International Conference on Automation Science and Engineering (CASE)},
+  pages={948--953},
+  year={2014},
+  organization={IEEE}
+}
+
+@inproceedings{yan2010iterative,
+  title={Iterative learning control in large scale HVAC system},
+  author={Yan, Xiuying and Ren, Qingchang and Meng, Qinglong},
+  booktitle={2010 8th World Congress on Intelligent Control and Automation},
+  pages={5063--5066},
+  year={2010},
+  organization={IEEE}
+}
+
+@inproceedings{lu2018active,
+  title={Active disturbance rejection based iterative learning control for variable air volume central air-conditioning system},
+  author={Lu, Shiying and Ai, Wei and Li, Xiangyang},
+  booktitle={2018 IEEE 7th Data Driven Control and Learning Systems Conference (DDCLS)},
+  pages={1073--1078},
+  year={2018},
+  organization={IEEE}
+}
+
+@article{chi2021discrete,
+  title={Discrete-Time-Distributed Adaptive ILC With Nonrepetitive Uncertainties and Applications to Building HVAC Systems},
+  author={Chi, Ronghu and Hui, Yu and Wang, Rongrong and Huang, Biao and Hou, Zhongsheng},
+  journal={IEEE Transactions on Systems, Man, and Cybernetics: Systems},
+  year={2021},
+  publisher={IEEE}
+}
+
+@inproceedings{peng2016iterative,
+  title={Iterative design of feedback and feedforward controller with input saturation constraint for building temperature control},
+  author={Peng, Cheng and Zhang, Wenlong and Tomizuka, Masayoshi},
+  booktitle={2016 American Control Conference (ACC)},
+  pages={1241--1246},
+  year={2016},
+  organization={IEEE}
+}
+
+@inproceedings{peng2016optimization,
+  title={Optimization-based constrained iterative learning control with application to building temperature control systems},
+  author={Peng, Cheng and Sun, Liting and Zhang, Wenlong and Tomizuka, Masayoshi},
+  booktitle={2016 IEEE International Conference on Advanced Intelligent Mechatronics (AIM)},
+  pages={709--715},
+  year={2016},
+  organization={IEEE}
+}
+
+@inproceedings{peng2017distributed,
+  title={Distributed and cooperative optimization-based iterative learning control for large-scale building temperature regulation},
+  author={Peng, Cheng and Sun, Liting and Tomizuka, Masayoshi},
+  booktitle={2017 IEEE International Conference on Advanced Intelligent Mechatronics (AIM)},
+  pages={1606--1611},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{peng2017constrained,
+  title={Constrained Iterative Learning Control with PSO-Youla feedback tuning for building temperature control},
+  author={Peng, Cheng and Sun, Liting and Tomizuka, Masayoshi},
+  journal={IFAC-PapersOnLine},
+  volume={50},
+  number={1},
+  pages={3135--3141},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@inproceedings{peng2018concurrent,
+  title={Concurrent Design of Feedforward and Feedback Controller for Building Thermal System},
+  author={Peng, Cheng and Tomizuka, Masayoshi},
+  booktitle={2018 IEEE Conference on Decision and Control (CDC)},
+  pages={5257--5263},
+  year={2018},
+  organization={IEEE}
+}
+
+@book{peng2019optimization,
+  title={Optimization Based Control for Multi-agent System with Interaction},
+  author={Peng, Cheng},
+  year={2019},
+  publisher={University of California, Berkeley}
+}
